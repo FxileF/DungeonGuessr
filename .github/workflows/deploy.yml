@@ -1,13 +1,12 @@
-# Builds the site and publishes it to GitHub Pages.
-# Currently manual-only (Actions tab → "Deploy to GitHub Pages" → Run workflow).
-# To deploy automatically on every push to main, uncomment the `push` trigger.
+# Builds the site and publishes it to GitHub Pages on every push to main.
+# Can also be started by hand from the Actions tab.
 # One-time setup: repo Settings → Pages → Source: "GitHub Actions".
 name: Deploy to GitHub Pages
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
-  # push:
-  #   branches: [main]
 
 permissions:
   contents: read

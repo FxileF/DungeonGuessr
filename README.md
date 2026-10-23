@@ -98,11 +98,11 @@ the build uses relative paths (`base: "./"` in `vite.config.ts`), so it works at
 
 1. Push this repository to GitHub (it must be **public** on a free account).
 2. On GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Go to the **Actions** tab → **Deploy to GitHub Pages** → **Run workflow**.
+3. Push to `main`. The **Deploy to GitHub Pages** workflow builds and publishes the site
+   automatically (progress is in the **Actions** tab).
 4. After a minute, the site is live at `https://<username>.github.io/DungeonGuessr/`.
 
-To redeploy automatically on every push to `main`, uncomment the `push:` trigger in
-`.github/workflows/deploy.yml`.
+Every later push to `main` redeploys the site.
 
 Notes:
 - Only `dist/` is published, so `screenshots-src/` (with answer-revealing file names) isn't on the
