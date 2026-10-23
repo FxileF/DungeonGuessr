@@ -176,56 +176,82 @@ main { flex: 1; width: 100%; max-width: 1240px; margin: 0 auto; padding: 20px 16
   to { transform: none; opacity: 1; }
 }
 
-/* Mort pops up above the result bar when the room is guessed right. */
+/* Mort pops up above the left end of the result bar when the room is guessed
+   right. The head image faces right, so the speech bubble sits on his right. */
 .mort {
   position: absolute;
-  right: 28px;
+  left: 24px;
   bottom: 92px;
   z-index: 1;
   display: flex;
-  align-items: flex-start;
-  gap: 8px;
+  flex-direction: row-reverse; /* bubble comes first in the markup */
+  align-items: center;
+  gap: 4px;
   opacity: 0;
   pointer-events: none;
 }
 .mort img {
-  width: 88px;
-  height: 88px;
-  image-rendering: pixelated;
-  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.6));
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  transform-origin: 50% 90%;
+  filter: drop-shadow(0 0 14px rgba(224, 180, 58, 0.45)) drop-shadow(0 8px 10px rgba(0, 0, 0, 0.6));
 }
 .bubble {
   font-family: var(--pixel);
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #1b1607;
   background: #fff6d6;
-  padding: 6px 10px;
-  border-radius: 8px;
+  padding: 7px 12px;
+  border-radius: 10px;
   position: relative;
-  margin-top: 10px;
   white-space: nowrap;
+  box-shadow: 0 4px 0 #c9b98a, 0 8px 18px rgba(0, 0, 0, 0.4);
+  transform-origin: 0 50%;
 }
 .bubble::after {
   content: "";
   position: absolute;
-  right: -6px;
-  top: 10px;
-  border: 6px solid transparent;
-  border-right: 0;
-  border-left-color: #fff6d6;
+  left: -7px;
+  top: 50%;
+  margin-top: -7px;
+  border: 7px solid transparent;
+  border-left: 0;
+  border-right-color: #fff6d6;
 }
-.mort.show { animation: mort-pop 2.8s ease-out forwards; }
-@keyframes mort-pop {
-  0% { opacity: 0; transform: translateY(80px) rotate(8deg); }
-  12% { opacity: 1; transform: translateY(-10px) rotate(-4deg); }
-  20% { transform: translateY(0) rotate(0); }
-  30% { transform: translateY(-4px); }
-  38%, 82% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(60px); }
+
+/* Container rises and sinks; the head squashes on landing and nods while
+   "talking"; the bubble pops in just after he lands. */
+.mort.show { animation: mort-rise 3s ease-out forwards; }
+.mort.show img { animation: mort-head 3s ease-out forwards; }
+.mort.show .bubble { animation: bubble-pop 3s ease-out forwards; }
+@keyframes mort-rise {
+  0% { opacity: 0; transform: translateY(90px); }
+  10% { opacity: 1; transform: translateY(-14px); }
+  17%, 84% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(70px); }
+}
+@keyframes mort-head {
+  0% { transform: rotate(-12deg); }
+  10% { transform: rotate(6deg) scale(1, 1); }
+  17% { transform: rotate(0) scale(1.12, 0.88); }
+  23% { transform: scale(0.96, 1.05); }
+  28% { transform: none; }
+  38% { transform: rotate(-6deg); }
+  48% { transform: rotate(5deg); }
+  58% { transform: rotate(-3deg); }
+  66%, 100% { transform: none; }
+}
+@keyframes bubble-pop {
+  0%, 18% { opacity: 0; transform: scale(0.3); }
+  26% { opacity: 1; transform: scale(1.1); }
+  32%, 80% { opacity: 1; transform: none; }
+  90%, 100% { opacity: 0; transform: scale(0.6); }
 }
 @media (prefers-reduced-motion: reduce) {
   .banner { animation: none; }
-  .mort.show { animation: mort-fade 2.8s forwards; }
+  .mort.show, .mort.show .bubble { animation: mort-fade 3s forwards; }
+  .mort.show img { animation: none; }
   @keyframes mort-fade { 0%, 80% { opacity: 1; } 100% { opacity: 0; } }
 }
 
@@ -343,7 +369,18 @@ span.opt.name small { color: var(--muted); font-size: 0.75rem; }
   margin: 12px auto 28px;
   max-width: 960px;
 }
-.hero-mort { width: 72px; height: 72px; image-rendering: pixelated; filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6)); }
+.hero-mort {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 16px rgba(224, 180, 58, 0.35)) drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6));
+  animation: hero-bob 3.5s ease-in-out infinite;
+}
+@keyframes hero-bob {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-5px) rotate(-3deg); }
+}
+@media (prefers-reduced-motion: reduce) { .hero-mort { animation: none; } }
 .hero h2 { margin: 0 0 4px; font-family: var(--pixel); font-weight: 400; font-size: 1.6rem; }
 .hero p { margin: 0; }
 
@@ -389,6 +426,82 @@ span.opt.name small { color: var(--muted); font-size: 0.75rem; }
 .summary { max-width: 760px; margin: 0 auto; text-align: center; align-items: stretch; }
 .summary .big { font-family: var(--pixel); font-size: 3rem; margin: 0; color: var(--accent); }
 .summary .big small { font-size: 1.2rem; color: var(--muted); }
+.rank-hint { color: var(--muted); }
+.rank-hint b { color: var(--text); }
+
+/* Dungeon rank emblem (public/Dungeon_Ranking_*.webp), stamped in once loaded.
+   Fixed height so the score below doesn't jump while the image loads. */
+.rank {
+  --rank: var(--muted);
+  align-self: center;
+  height: 172px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.rank::before {
+  content: "";
+  position: absolute;
+  inset: 10% -20%;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--rank) 40%, transparent), transparent);
+  opacity: 0;
+  transition: opacity 0.6s 0.3s;
+}
+.rank.in::before { opacity: 1; }
+.rank-art { position: relative; display: block; line-height: 0; }
+.rank-img {
+  display: block;
+  image-rendering: pixelated;
+  opacity: 0;
+  filter: drop-shadow(0 6px 0 rgba(0, 0, 0, 0.35));
+}
+.rank.in .rank-img { animation: rank-stamp 0.6s cubic-bezier(0.2, 1.4, 0.4, 1) both; }
+.rank-letter {
+  display: none;
+  font-family: var(--pixel);
+  font-size: 3.4rem;
+  line-height: 1;
+  color: var(--rank);
+  text-shadow: 0 4px 0 color-mix(in srgb, var(--rank) 35%, #000);
+}
+.rank.no-img .rank-art { display: none; }
+.rank.no-img .rank-letter { display: block; }
+.rank-splus { --rank: #ffb627; }
+.rank-s { --rank: #f2cf3c; }
+.rank-a { --rank: #9b4dff; }
+.rank-b { --rank: #4cc22f; }
+.rank-c { --rank: #4a5cf0; }
+.rank-d { --rank: #f0322f; }
+
+/* S+ gets a light sweep, masked to the emblem's own shape. */
+.rank-splus.in .rank-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.55) 50%, transparent 65%) no-repeat;
+  background-size: 250% 100%;
+  -webkit-mask: var(--img) center / 100% 100% no-repeat;
+  mask: var(--img) center / 100% 100% no-repeat;
+  animation: rank-shine 2.6s ease-in-out 0.7s infinite;
+}
+@keyframes rank-stamp {
+  0% { opacity: 0; transform: scale(2.2) rotate(-12deg); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes rank-shine {
+  0% { background-position: 100% 0; }
+  55%, 100% { background-position: 0 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rank.in .rank-img { animation: none; opacity: 1; }
+  .rank-splus.in .rank-art::after { animation: none; display: none; }
+}
+
+/* Small emblem next to today's daily score on the menu */
+.card .result { display: flex; align-items: center; gap: 10px; }
+.rank-icon { height: 40px; width: auto; image-rendering: pixelated; }
+
 .summary table { width: 100%; border-collapse: collapse; }
 .summary th, .summary td { padding: 8px 6px; border-bottom: 1px solid var(--border); }
 .summary th { color: var(--muted); font-weight: 500; font-size: 0.85rem; }
@@ -406,8 +519,8 @@ span.opt.name small { color: var(--muted); font-size: 0.75rem; }
   .stage { width: 100%; }
   .banner { position: static; border-radius: 0; flex-wrap: wrap; }
   .banner button { width: 100%; }
-  .mort { bottom: 12px; right: 12px; }
-  .mort img { width: 64px; height: 64px; }
+  .mort { bottom: 12px; left: 12px; }
+  .mort img { width: 72px; height: 72px; }
   .hero { flex-direction: column; text-align: center; }
   .summary th:nth-child(3), .summary td:nth-child(3),
   .summary th:nth-child(4), .summary td:nth-child(4),

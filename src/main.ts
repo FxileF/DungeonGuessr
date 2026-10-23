@@ -4,7 +4,10 @@ import {
   type Difficulty, type GameData, type Room, type Screenshot, type Shape,
 } from "./data";
 import { hashString, mulberry32, shuffle, todayUTC } from "./random";
-import { MAX_POINTS, MAX_ROUND, scoreName, scoreSecrets, scoreShape } from "./scoring";
+import {
+  MAX_POINTS, MAX_ROUND, RANKS, rankThreshold, scoreName, scoreRank, scoreSecrets, scoreShape,
+  type Rank,
+} from "./scoring";
 import { copyText, shareText } from "./share";
 import {
   getDaily, getPrefs, getStats, getStreaks, recordGame, saveDaily, setPrefs,
@@ -69,6 +72,11 @@ function shapeIcon(shape: Shape) {
     .join("");
   return `<svg class="shape-icon" viewBox="0 0 40 20" aria-hidden="true">${rects}</svg>`;
 }
+
+// Mort's head: public/mort.png if it exists, otherwise the drawn public/mort.svg.
+const mortImg = (cls = "") =>
+  `<img src="${asset("mort.png")}" alt="" class="${cls}"
+    onerror="this.onerror=null;this.src='${asset("mort.svg")}'" />`;
 
 const roundTotal = (p: Points) => p.shape + p.secrets + p.name;
 const gameScore = (g: Game) => g.results.reduce((s, r) => s + roundTotal(r.points), 0);
@@ -190,7 +198,7 @@ function render() {
         ${DEBUG ? `<span class="debug">${esc(r.room.name)} · ${r.room.shape} · ${r.room.secrets}</span>` : ""}
         <div class="mort" id="mort" aria-hidden="true">
           <span class="bubble"></span>
-          <img src="${asset("mort.svg")}" alt="" />
+          ${mortImg()}
         </div>
         <div class="banner" id="banner" hidden></div>
       </div>
@@ -410,16 +418,60 @@ function cheer(text: string) {
   mort.classList.add("show");
 }
 
+const rankClass = (rank: Rank) => rank.replace("+", "plus").toLowerCase();
+// "+" isn't safe in URLs (some servers read it as a space), so S+ is "S_Plus".
+const rankImage = (rank: Rank) => asset(`Dungeon_Ranking_${rank.replace("+", "_Plus")}.webp`);
+// The emblems are drawn with 5px "pixels"; 0.4 shows them at a crisp 2px.
+const RANK_IMG_SCALE = 0.4;
+
+// Rank emblem on the results screen; the letter is a fallback if the image fails.
+function rankBadge(rank: Rank) {
+  return `
+    <div class="rank rank-${rankClass(rank)}" title="Dungeon rank ${rank}">
+      <span class="rank-art" style="--img: url('${rankImage(rank)}')">
+        <img class="rank-img" src="${rankImage(rank)}" alt="Rank ${rank}" />
+      </span>
+      <span class="rank-letter">${rank}</span>
+    </div>`;
+}
+
+function showRankBadge() {
+  const badge = app.querySelector<HTMLElement>(".rank");
+  const img = badge?.querySelector<HTMLImageElement>(".rank-img");
+  if (!badge || !img) return;
+  const show = () => {
+    img.style.width = `${Math.round(img.naturalWidth * RANK_IMG_SCALE)}px`;
+    badge.classList.add("in");
+  };
+  if (img.complete && img.naturalWidth) show();
+  else {
+    img.addEventListener("load", show);
+    img.addEventListener("error", () => badge.classList.add("no-img", "in"));
+  }
+}
+
+// "x more points for <next rank>" under the score.
+function rankHint(rank: Rank, score: number, max: number) {
+  const i = RANKS.findIndex((r) => r.rank === rank);
+  if (i === 0) return `<p class="rank-hint">Flawless run!</p>`;
+  const next = RANKS[i - 1];
+  const need = rankThreshold(next.min, max) - score;
+  return `<p class="rank-hint">${fmt(need)} more points for <b>${next.rank}</b></p>`;
+}
+
 function renderSummary(g: Game) {
   const score = gameScore(g);
   const max = gameMax(g);
-  const title = g.mode === "daily" ? `DungeonGuessr Daily ${g.date}` : "DungeonGuessr";
+  const rank = scoreRank(score, max);
+  const title = `${g.mode === "daily" ? `DungeonGuessr Daily ${g.date}` : "DungeonGuessr"} · ${rank}`;
   const streak = g.mode === "daily" ? getStreaks(todayUTC()).current : 0;
   const cell = (pts: number, m: number) => `<td><span class="chip ${grade(pts, m)}">${fmt(pts)}</span></td>`;
   app.innerHTML = `
     <section class="summary card">
       <h2>${g.mode === "daily" ? `Daily challenge · ${g.date}` : "Final score"}</h2>
+      ${rankBadge(rank)}
       <p class="big">${fmt(score)} <small>/ ${fmt(max)}</small></p>
+      ${rankHint(rank, score, max)}
       ${streak ? `<p class="streak">🔥 ${streak}-day streak</p>` : ""}
       <table>
         <thead><tr><th>#</th><th>Room</th><th>Shape</th><th>Secrets</th><th>Name</th><th>Total</th></tr></thead>
@@ -442,6 +494,7 @@ function renderSummary(g: Game) {
       </div>
     </section>`;
 
+  showRankBadge();
   const share = app.querySelector<HTMLButtonElement>("#share")!;
   share.addEventListener("click", async () => {
     const ok = await copyText(shareText(title, score, max, g.results.map((r) => r.points)));
@@ -465,13 +518,16 @@ function renderMenu() {
   let includePuzzles = prefs.includePuzzles;
 
   const dailyBody = daily?.done
-    ? `<p class="result">Today: <b>${fmt(daily.score)}</b> / ${fmt(daily.max)}</p>
+    ? `<p class="result">
+         <img class="rank-icon" src="${rankImage(scoreRank(daily.score, daily.max))}" alt="Rank ${scoreRank(daily.score, daily.max)}" />
+         <span>Today: <b>${fmt(daily.score)}</b> / ${fmt(daily.max)}</span>
+       </p>
        <button id="daily" class="primary">View result</button>`
     : `<button id="daily" class="primary">${daily ? "Continue" : "Play daily"}</button>`;
 
   app.innerHTML = `
     <section class="hero">
-      <img src="${asset("mort.svg")}" alt="" class="hero-mort" />
+      ${mortImg("hero-mort")}
       <div>
         <h2>Where in the dungeon are you?</h2>
         <p class="muted">Guess the room's shape, its secret count, then its name.</p>
@@ -507,6 +563,8 @@ function renderMenu() {
           <li><b>Secrets</b>: ${fmt(MAX_POINTS.secrets)} pts if exact, 600 if off by one, 300 if off by two. Keys 0–9.</li>
           <li><b>Room name</b>: ${fmt(MAX_POINTS.name)} pts. Only rooms of the right shape are listed.</li>
         </ol>
+        <p>At the end you get a dungeon rank:
+          ${RANKS.map((r) => `<b>${r.rank}</b> ${r.min ? `${fmt(rankThreshold(r.min, ROUNDS_PER_GAME * MAX_ROUND))}+` : "below"}`).join(" · ")}.</p>
         <p>Click the screenshot to view it full size.</p>
       </details>
     </section>`;

@@ -10,8 +10,8 @@ Guess the Hypixel SkyBlock dungeon room from a single screenshot. Each round has
    listed; set `NAMES_MATCH_SHAPE = false` in `src/main.ts` to list all rooms instead.
 
 All three steps are shown side by side under the screenshot; steps not reached yet are greyed
-out. Guessing the room right makes Mort pop up (`public/mort.svg`, a hand-drawn pixel head;
-replace it with any square image to change him). Point values live in `src/scoring.ts`.
+out. Guessing the room right makes Mort pop up. To use a real Mort head, save a square,
+front-facing image as `public/mort.png`; without it the hand-drawn `public/mort.svg` is used. Point values live in `src/scoring.ts`.
 
 A game has 5 rounds, max 25 000 points.
 

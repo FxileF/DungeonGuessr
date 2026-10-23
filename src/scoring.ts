@@ -23,3 +23,23 @@ export function scoreSecrets(guess: number, answer: number) {
 
 export const scoreName = (guessId: string, answerId: string) =>
   guessId === answerId ? MAX_POINTS.name : 0;
+
+// Dungeon score ranks as in the game (out of 300), scaled to the game's max:
+// with 25,000 max, S+ = 25,000, S ≥ 22,500, A ≥ 19,167, B ≥ 13,334, C ≥ 8,334.
+export const RANKS = [
+  { rank: "S+", min: 300 },
+  { rank: "S", min: 270 },
+  { rank: "A", min: 230 },
+  { rank: "B", min: 160 },
+  { rank: "C", min: 100 },
+  { rank: "D", min: 0 },
+] as const;
+export type Rank = (typeof RANKS)[number]["rank"];
+
+export function scoreRank(score: number, max: number): Rank {
+  // Integer comparison (score/max ≥ min/300) avoids floating-point edge cases.
+  return RANKS.find((r) => score * 300 >= r.min * max)!.rank;
+}
+
+// Points needed for each rank at a given max, for display.
+export const rankThreshold = (min: number, max: number) => Math.ceil((min * max) / 300);
