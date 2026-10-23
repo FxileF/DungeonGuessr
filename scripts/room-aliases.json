@@ -1,0 +1,7 @@
+{
+  "_comment": "Maps screenshot file-name room names (no spaces, any case) to room ids in public/data/rooms.json when they don't match automatically. Use null to skip a name.",
+  "REDSTONESKULL": "redstone-key",
+  "CREAPERBEAMS": "creeper-beams",
+  "PURPLEFLAG": "purple-flags",
+  "CORDIDOR": null
+}

@@ -1,0 +1,1262 @@
+[
+  {
+    "id": "admin",
+    "name": "Admin",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 34,
+    "guessable": true
+  },
+  {
+    "id": "altar",
+    "name": "Altar",
+    "type": "normal",
+    "shape": "L",
+    "secrets": 6,
+    "crypts": 3,
+    "guessable": true
+  },
+  {
+    "id": "andesite",
+    "name": "Andesite",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "archway",
+    "name": "Archway",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 3,
+    "crypts": 4,
+    "guessable": true
+  },
+  {
+    "id": "arrow-trap",
+    "name": "Arrow Trap",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "atlas",
+    "name": "Atlas",
+    "type": "normal",
+    "shape": "2x2",
+    "secrets": 6,
+    "crypts": 5,
+    "guessable": true
+  },
+  {
+    "id": "balcony",
+    "name": "Balcony",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 4,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "banners",
+    "name": "Banners",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "basement",
+    "name": "Basement",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "beams",
+    "name": "Beams",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 2,
+    "guessable": true
+  },
+  {
+    "id": "big-red-flag",
+    "name": "Big Red Flag",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "black-flag",
+    "name": "Black Flag",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "blood",
+    "name": "Blood",
+    "type": "blood",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": false
+  },
+  {
+    "id": "blue-skulls",
+    "name": "Blue Skulls",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 4,
+    "guessable": true
+  },
+  {
+    "id": "boulder",
+    "name": "Boulder",
+    "type": "puzzle",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "bridges",
+    "name": "Bridges",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 6,
+    "crypts": 6,
+    "guessable": true
+  },
+  {
+    "id": "buttons",
+    "name": "Buttons",
+    "type": "normal",
+    "shape": "2x2",
+    "secrets": 5,
+    "crypts": 21,
+    "guessable": true
+  },
+  {
+    "id": "cage",
+    "name": "Cage",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "cages",
+    "name": "Cages",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "carpets",
+    "name": "Carpets",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 3,
+    "guessable": true
+  },
+  {
+    "id": "cathedral",
+    "name": "Cathedral",
+    "type": "normal",
+    "shape": "2x2",
+    "secrets": 8,
+    "crypts": 5,
+    "guessable": true
+  },
+  {
+    "id": "catwalk",
+    "name": "Catwalk",
+    "type": "normal",
+    "shape": "1x3",
+    "secrets": 6,
+    "crypts": 5,
+    "guessable": true
+  },
+  {
+    "id": "cell",
+    "name": "Cell",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "chains",
+    "name": "Chains",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "chambers",
+    "name": "Chambers",
+    "type": "normal",
+    "shape": "L",
+    "secrets": 5,
+    "crypts": 6,
+    "guessable": true
+  },
+  {
+    "id": "cobble-wall-pillar",
+    "name": "Cobble Wall Pillar",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "creeper-beams",
+    "name": "Creeper Beams",
+    "type": "puzzle",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "criss-cross",
+    "name": "Criss-Cross",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 6,
+    "guessable": true
+  },
+  {
+    "id": "crypt",
+    "name": "Crypt",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 5,
+    "crypts": 2,
+    "guessable": true
+  },
+  {
+    "id": "deathmite",
+    "name": "Deathmite",
+    "type": "normal",
+    "shape": "1x3",
+    "secrets": 6,
+    "crypts": 4,
+    "guessable": true
+  },
+  {
+    "id": "default",
+    "name": "Default",
+    "type": "champion",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": false
+  },
+  {
+    "id": "diagonal",
+    "name": "Diagonal",
+    "type": "normal",
+    "shape": "1x3",
+    "secrets": 4,
+    "crypts": 3,
+    "guessable": true
+  },
+  {
+    "id": "dino-site",
+    "name": "Dino Site",
+    "type": "normal",
+    "shape": "L",
+    "secrets": 4,
+    "crypts": 4,
+    "guessable": true
+  },
+  {
+    "id": "dip",
+    "name": "Dip",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 3,
+    "guessable": true
+  },
+  {
+    "id": "dome",
+    "name": "Dome",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 2,
+    "guessable": true
+  },
+  {
+    "id": "doors",
+    "name": "Doors",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 5,
+    "crypts": 7,
+    "guessable": true
+  },
+  {
+    "id": "double-diamond",
+    "name": "Double Diamond",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "dragon",
+    "name": "Dragon",
+    "type": "champion",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": false
+  },
+  {
+    "id": "drop",
+    "name": "Drop",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 6,
+    "guessable": true
+  },
+  {
+    "id": "dueces",
+    "name": "Dueces",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 6,
+    "guessable": true
+  },
+  {
+    "id": "duncan",
+    "name": "Duncan",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "end",
+    "name": "End",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "entrance",
+    "name": "Entrance",
+    "type": "entrance",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": false
+  },
+  {
+    "id": "fairy",
+    "name": "Fairy",
+    "type": "fairy",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": false
+  },
+  {
+    "id": "flags",
+    "name": "Flags",
+    "type": "normal",
+    "shape": "2x2",
+    "secrets": 7,
+    "crypts": 8,
+    "guessable": true
+  },
+  {
+    "id": "gold",
+    "name": "Gold",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "golden-oasis",
+    "name": "Golden Oasis",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "grand-library",
+    "name": "Grand Library",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 4,
+    "crypts": 2,
+    "guessable": true
+  },
+  {
+    "id": "granite",
+    "name": "Granite",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "grass-ruin",
+    "name": "Grass Ruin",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 3,
+    "crypts": 4,
+    "guessable": true
+  },
+  {
+    "id": "gravel",
+    "name": "Gravel",
+    "type": "normal",
+    "shape": "1x3",
+    "secrets": 6,
+    "crypts": 2,
+    "guessable": true
+  },
+  {
+    "id": "hall",
+    "name": "Hall",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "hallway",
+    "name": "Hallway",
+    "type": "normal",
+    "shape": "1x4",
+    "secrets": 3,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "higher-blaze",
+    "name": "Higher Blaze",
+    "type": "puzzle",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "ice-fill",
+    "name": "Ice Fill",
+    "type": "puzzle",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "ice-path",
+    "name": "Ice Path",
+    "type": "puzzle",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "jumping-skulls",
+    "name": "Jumping Skulls",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "king-midas",
+    "name": "King Midas",
+    "type": "champion",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 1,
+    "guessable": false
+  },
+  {
+    "id": "knight",
+    "name": "Knight",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "lava-pit",
+    "name": "Lava Pit",
+    "type": "rare",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "lava-ravine",
+    "name": "Lava Ravine",
+    "type": "normal",
+    "shape": "L",
+    "secrets": 6,
+    "crypts": 4,
+    "guessable": true
+  },
+  {
+    "id": "layers",
+    "name": "Layers",
+    "type": "normal",
+    "shape": "L",
+    "secrets": 8,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "leaves",
+    "name": "Leaves",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "locked-away",
+    "name": "Locked Away",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "logs",
+    "name": "Logs",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 4,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "long-hall",
+    "name": "Long Hall",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 3,
+    "guessable": true
+  },
+  {
+    "id": "lots-of-floors",
+    "name": "Lots Of Floors",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "lower-blaze",
+    "name": "Lower Blaze",
+    "type": "puzzle",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "mage",
+    "name": "Mage",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 4,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "market",
+    "name": "Market",
+    "type": "normal",
+    "shape": "L",
+    "secrets": 5,
+    "crypts": 4,
+    "guessable": true
+  },
+  {
+    "id": "melon",
+    "name": "Melon",
+    "type": "normal",
+    "shape": "L",
+    "secrets": 7,
+    "crypts": 4,
+    "guessable": true
+  },
+  {
+    "id": "mines",
+    "name": "Mines",
+    "type": "normal",
+    "shape": "2x2",
+    "secrets": 10,
+    "crypts": 11,
+    "guessable": true
+  },
+  {
+    "id": "mirror",
+    "name": "Mirror",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "mossy",
+    "name": "Mossy",
+    "type": "normal",
+    "shape": "1x4",
+    "secrets": 4,
+    "crypts": 2,
+    "guessable": true
+  },
+  {
+    "id": "multicolored",
+    "name": "Multicolored",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "mural",
+    "name": "Mural",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "museum",
+    "name": "Museum",
+    "type": "normal",
+    "shape": "2x2",
+    "secrets": 5,
+    "crypts": 4,
+    "guessable": true
+  },
+  {
+    "id": "mushroom",
+    "name": "Mushroom",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "new-trap",
+    "name": "New Trap",
+    "type": "trap",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 1,
+    "guessable": false
+  },
+  {
+    "id": "old-trap",
+    "name": "Old Trap",
+    "type": "trap",
+    "shape": "1x1",
+    "secrets": 4,
+    "crypts": 2,
+    "guessable": false
+  },
+  {
+    "id": "overgrown",
+    "name": "Overgrown",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "overgrown-chains",
+    "name": "Overgrown Chains",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "painting",
+    "name": "Painting",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "pedestal",
+    "name": "Pedestal",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 5,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "perch",
+    "name": "Perch",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "pipes",
+    "name": "Pipes",
+    "type": "normal",
+    "shape": "1x4",
+    "secrets": 7,
+    "crypts": 9,
+    "guessable": true
+  },
+  {
+    "id": "pirate",
+    "name": "Pirate",
+    "type": "normal",
+    "shape": "L",
+    "secrets": 6,
+    "crypts": 2,
+    "guessable": true
+  },
+  {
+    "id": "pit",
+    "name": "Pit",
+    "type": "normal",
+    "shape": "1x4",
+    "secrets": 5,
+    "crypts": 4,
+    "guessable": true
+  },
+  {
+    "id": "pressure-plates",
+    "name": "Pressure Plates",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 6,
+    "crypts": 6,
+    "guessable": true
+  },
+  {
+    "id": "prison-cell",
+    "name": "Prison Cell",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "purple-flags",
+    "name": "Purple Flags",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 5,
+    "crypts": 7,
+    "guessable": true
+  },
+  {
+    "id": "quad-lava",
+    "name": "Quad Lava",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "quartz-knight",
+    "name": "Quartz Knight",
+    "type": "normal",
+    "shape": "1x4",
+    "secrets": 7,
+    "crypts": 9,
+    "guessable": true
+  },
+  {
+    "id": "quiz",
+    "name": "Quiz",
+    "type": "puzzle",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "raccoon",
+    "name": "Raccoon",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 4,
+    "crypts": 2,
+    "guessable": true
+  },
+  {
+    "id": "rail-track",
+    "name": "Rail Track",
+    "type": "rare",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 3,
+    "guessable": true
+  },
+  {
+    "id": "rails",
+    "name": "Rails",
+    "type": "normal",
+    "shape": "2x2",
+    "secrets": 9,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "rare-carpets",
+    "name": "Rare Carpets",
+    "type": "rare",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "rare-overgrown",
+    "name": "Rare Overgrown",
+    "type": "rare",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "rare-pillars",
+    "name": "Rare Pillars",
+    "type": "rare",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "red-blue",
+    "name": "Red Blue",
+    "type": "normal",
+    "shape": "1x3",
+    "secrets": 4,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "red-green",
+    "name": "Red Green",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 2,
+    "guessable": true
+  },
+  {
+    "id": "redstone-crypt",
+    "name": "Redstone Crypt",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "redstone-key",
+    "name": "Redstone Key",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 4,
+    "guessable": true
+  },
+  {
+    "id": "redstone-warrior",
+    "name": "Redstone Warrior",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 3,
+    "crypts": 4,
+    "guessable": true
+  },
+  {
+    "id": "ritual",
+    "name": "Ritual",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "sand-dragon",
+    "name": "Sand Dragon",
+    "type": "rare",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "sarcophagus",
+    "name": "Sarcophagus",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "scaffolding",
+    "name": "Scaffolding",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "shadow-assassin",
+    "name": "Shadow Assassin",
+    "type": "champion",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 2,
+    "guessable": false
+  },
+  {
+    "id": "silver-sword",
+    "name": "Silver Sword",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "skull",
+    "name": "Skull",
+    "type": "normal",
+    "shape": "1x2",
+    "secrets": 2,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "slabs",
+    "name": "Slabs",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 2,
+    "guessable": true
+  },
+  {
+    "id": "slime",
+    "name": "Slime",
+    "type": "normal",
+    "shape": "1x3",
+    "secrets": 5,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "sloth",
+    "name": "Sloth",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "small-stairs",
+    "name": "Small Stairs",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "small-waterfall",
+    "name": "Small Waterfall",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 5,
+    "guessable": true
+  },
+  {
+    "id": "spider",
+    "name": "Spider",
+    "type": "normal",
+    "shape": "L",
+    "secrets": 9,
+    "crypts": 3,
+    "guessable": true
+  },
+  {
+    "id": "spikes",
+    "name": "Spikes",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 2,
+    "guessable": true
+  },
+  {
+    "id": "staircase",
+    "name": "Staircase",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 2,
+    "guessable": true
+  },
+  {
+    "id": "stairs",
+    "name": "Stairs",
+    "type": "normal",
+    "shape": "2x2",
+    "secrets": 4,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "steps",
+    "name": "Steps",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "stone-window",
+    "name": "Stone Window",
+    "type": "rare",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 1,
+    "guessable": true
+  },
+  {
+    "id": "supertall",
+    "name": "Supertall",
+    "type": "normal",
+    "shape": "2x2",
+    "secrets": 6,
+    "crypts": 6,
+    "guessable": true
+  },
+  {
+    "id": "teleport-maze",
+    "name": "Teleport Maze",
+    "type": "puzzle",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "temple",
+    "name": "Temple",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 3,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "three-floors",
+    "name": "Three Floors",
+    "type": "rare",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "three-weirdos",
+    "name": "Three Weirdos",
+    "type": "puzzle",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "tic-tac-toe",
+    "name": "Tic Tac Toe",
+    "type": "puzzle",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "tombstone",
+    "name": "Tombstone",
+    "type": "rare",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "tomioka",
+    "name": "Tomioka",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "trinity",
+    "name": "Trinity",
+    "type": "rare",
+    "shape": "1x1",
+    "secrets": 4,
+    "crypts": 3,
+    "guessable": true
+  },
+  {
+    "id": "vinny-8-ball",
+    "name": "Vinny 8 Ball",
+    "type": "rare",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "water",
+    "name": "Water",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 2,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "water-board",
+    "name": "Water Board",
+    "type": "puzzle",
+    "shape": "1x1",
+    "secrets": 0,
+    "crypts": 0,
+    "guessable": true
+  },
+  {
+    "id": "waterfall",
+    "name": "Waterfall",
+    "type": "normal",
+    "shape": "1x4",
+    "secrets": 8,
+    "crypts": 3,
+    "guessable": true
+  },
+  {
+    "id": "well",
+    "name": "Well",
+    "type": "normal",
+    "shape": "L",
+    "secrets": 7,
+    "crypts": 5,
+    "guessable": true
+  },
+  {
+    "id": "withermancer",
+    "name": "Withermancer",
+    "type": "normal",
+    "shape": "L",
+    "secrets": 4,
+    "crypts": 6,
+    "guessable": true
+  },
+  {
+    "id": "wizard",
+    "name": "Wizard",
+    "type": "normal",
+    "shape": "1x3",
+    "secrets": 4,
+    "crypts": 8,
+    "guessable": true
+  },
+  {
+    "id": "zodd",
+    "name": "Zodd",
+    "type": "normal",
+    "shape": "1x1",
+    "secrets": 1,
+    "crypts": 1,
+    "guessable": true
+  }
+]
