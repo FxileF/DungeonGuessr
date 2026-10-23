@@ -2,9 +2,16 @@
 
 Guess the Hypixel SkyBlock dungeon room from a single screenshot. Each round has three steps:
 
-1. **Shape**: 1x1, 1x2, 1x3, 1x4, 2x2 or L (1000 pts, keys 1–6)
+1. **Shape**: 1x1, 1x2, 1x3, 1x4, 2x2 or L (keys 1–6). 1000 pts if exact; otherwise scored by
+   the difference in tile count: same size but other shape 600, one tile off 400, two off 150,
+   three off 0.
 2. **Secrets**: total secret count (1000 pts exact, 600 off by one, 300 off by two, keys 0–9)
-3. **Room name** (3000 pts)
+3. **Room name** (3000 pts). Only rooms of the room's real shape (revealed after step 1) are
+   listed; set `NAMES_MATCH_SHAPE = false` in `src/main.ts` to list all rooms instead.
+
+All three steps are shown side by side under the screenshot; steps not reached yet are greyed
+out. Guessing the room right makes Mort pop up (`public/mort.svg`, a hand-drawn pixel head;
+replace it with any square image to change him). Point values live in `src/scoring.ts`.
 
 A game has 5 rounds, max 25 000 points.
 
@@ -13,7 +20,9 @@ A game has 5 rounds, max 25 000 points.
 - **Daily challenge**: the same 5 screenshots for everyone, chosen from the UTC date. One
   attempt per day; progress is saved after every answer, so reloading doesn't give a retry.
   Finishing on consecutive days builds a 🔥 streak.
-- **Classic**: 5 random screenshots, optionally only Easy, Medium or Hard ones.
+- **Classic**: 5 random screenshots, optionally only Easy, Medium or Hard ones, with or without
+  puzzle rooms (checkbox on the menu). The daily always includes puzzle rooms so it stays the
+  same for everyone.
 
 Both modes end with a **Share result** button that copies a spoiler-free emoji grid
 (🟩 correct, 🟨 close, 🟥 wrong; one row per round: shape, secrets, name).
