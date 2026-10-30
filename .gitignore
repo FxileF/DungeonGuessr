@@ -2,3 +2,12 @@ node_modules/
 dist/
 *.log
 .DS_Store
+
+# Capture mod: Gradle caches, build output and the dev game folder
+# (which also holds the raw captures, reviewed before going into screenshots-src/).
+capture-mod/.gradle/
+capture-mod/build/
+capture-mod/run/
+capture-mod/.idea/
+capture-mod/.vscode/
+capture-mod/bin/
