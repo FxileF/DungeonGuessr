@@ -1,0 +1,49 @@
+{
+  "world": "Cell-1",
+  "room": "Cell",
+  "secrets": 1,
+  "shot": 1,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 10.419,
+    "y": 70.62,
+    "z": 17.587,
+    "yaw": 104.073,
+    "pitch": 16.334,
+    "fov": 100
+  },
+  "block": [
+    10,
+    69,
+    17
+  ],
+  "blockInRoom": [
+    18,
+    3,
+    25
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.761,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:49:53.805468200Z",
+  "difficultyGuess": "Medium"
+}

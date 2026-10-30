@@ -1,0 +1,49 @@
+{
+  "world": "Mirror-1",
+  "room": "Mirror",
+  "secrets": 1,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 15.641,
+    "y": 55.62,
+    "z": 17.222,
+    "yaw": -129.425,
+    "pitch": 26.653,
+    "fov": 100
+  },
+  "block": [
+    15,
+    54,
+    17
+  ],
+  "blockInRoom": [
+    23,
+    6,
+    25
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      48,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.947,
+    "variety": 9,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:54:01.014057500Z",
+  "difficultyGuess": "Hard"
+}

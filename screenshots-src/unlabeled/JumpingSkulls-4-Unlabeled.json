@@ -1,0 +1,49 @@
+{
+  "world": "Jumping-Skulls-1",
+  "room": "JumpingSkulls",
+  "secrets": 1,
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 1.56,
+    "y": 73.62,
+    "z": 17.772,
+    "yaw": -146.865,
+    "pitch": 1.88,
+    "fov": 100
+  },
+  "block": [
+    1,
+    72,
+    17
+  ],
+  "blockInRoom": [
+    9,
+    17,
+    25
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      55,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 11.255,
+    "variety": 15,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:52:46.281708400Z",
+  "difficultyGuess": "Easy"
+}

@@ -19,6 +19,19 @@ export interface Screenshot {
   image: string;
   roomId: string;
   difficulty: Difficulty | null;
+  // Where the shot was taken, for screenshots from the capture mod (not used yet).
+  pose?: Pose;
+}
+
+export interface Pose {
+  // Block the camera stood in, relative to the room's bounding-box corner (unrotated).
+  block: [number, number, number];
+  // Room bounding-box size in blocks.
+  roomSize: [number, number, number];
+  // Minecraft angles: yaw 0 = south, 90 = west; pitch negative = up.
+  yaw: number;
+  pitch: number;
+  fov: number;
 }
 
 // BASE_URL is "./" (see vite.config.ts), so paths resolve relative to the page

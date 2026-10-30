@@ -1,0 +1,49 @@
+{
+  "world": "Bridges-6",
+  "room": "Bridges",
+  "secrets": 6,
+  "shot": 1,
+  "difficulty": "Hard",
+  "camera": {
+    "x": 14.342,
+    "y": 54.62,
+    "z": 1.489,
+    "yaw": -44.451,
+    "pitch": -10.453,
+    "fov": 100
+  },
+  "block": [
+    14,
+    53,
+    1
+  ],
+  "blockInRoom": [
+    22,
+    8,
+    9
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      45,
+      -8
+    ],
+    "max": [
+      22,
+      113,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 5.633,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:49:16.189618500Z",
+  "difficultyGuess": "Medium"
+}

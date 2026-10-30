@@ -1,0 +1,49 @@
+{
+  "world": "Skull-2",
+  "room": "Skull",
+  "secrets": 2,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 37.632,
+    "y": 83.62,
+    "z": 5.787,
+    "yaw": -143.582,
+    "pitch": -7.197,
+    "fov": 100
+  },
+  "block": [
+    37,
+    82,
+    5
+  ],
+  "blockInRoom": [
+    45,
+    23,
+    13
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      59,
+      -8
+    ],
+    "max": [
+      54,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 5.223,
+    "variety": 12,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:56:49.458476600Z",
+  "difficultyGuess": "Hard"
+}

@@ -1,0 +1,49 @@
+{
+  "world": "Buttons-5",
+  "room": "Buttons",
+  "secrets": 5,
+  "shot": 5,
+  "difficulty": "Hard",
+  "camera": {
+    "x": 11.577,
+    "y": 70.62,
+    "z": 7.649,
+    "yaw": 91.027,
+    "pitch": 23.516,
+    "fov": 100
+  },
+  "block": [
+    11,
+    69,
+    7
+  ],
+  "blockInRoom": [
+    19,
+    18,
+    15
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      51,
+      -8
+    ],
+    "max": [
+      55,
+      99,
+      54
+    ]
+  },
+  "view": {
+    "medianDistance": 4.06,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:49:23.960018600Z",
+  "difficultyGuess": "Hard"
+}

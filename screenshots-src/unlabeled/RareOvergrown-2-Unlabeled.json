@@ -1,0 +1,48 @@
+{
+  "world": "Rare_Overgrown",
+  "room": "RareOvergrown",
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 20.605,
+    "y": 82.62,
+    "z": 7.775,
+    "yaw": 164.493,
+    "pitch": 9.77,
+    "fov": 100
+  },
+  "block": [
+    20,
+    81,
+    7
+  ],
+  "blockInRoom": [
+    28,
+    16,
+    15
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      65,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 5.045,
+    "variety": 16,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:55:44.695482200Z",
+  "difficultyGuess": "Hard"
+}

@@ -1,0 +1,49 @@
+{
+  "world": "Spikes-3",
+  "room": "Spikes",
+  "secrets": 3,
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 2.67,
+    "y": 69.62,
+    "z": 7.652,
+    "yaw": 65.667,
+    "pitch": 13.984,
+    "fov": 100
+  },
+  "block": [
+    2,
+    68,
+    7
+  ],
+  "blockInRoom": [
+    10,
+    19,
+    15
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      49,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 7.622,
+    "variety": 14,
+    "escapeFraction": 0.024
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:57:19.879806200Z",
+  "difficultyGuess": "Medium"
+}

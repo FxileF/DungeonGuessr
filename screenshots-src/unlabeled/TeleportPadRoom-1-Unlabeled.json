@@ -1,0 +1,48 @@
+{
+  "world": "Teleport-Pad-Room",
+  "room": "TeleportPadRoom",
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 5.435,
+    "y": 70.62,
+    "z": -0.523,
+    "yaw": 57.138,
+    "pitch": -7.675,
+    "fov": 100
+  },
+  "block": [
+    5,
+    69,
+    -1
+  ],
+  "blockInRoom": [
+    13,
+    4,
+    7
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      65,
+      -8
+    ],
+    "max": [
+      23,
+      100,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 4.351,
+    "variety": 12,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:57:40.683081900Z",
+  "difficultyGuess": "Hard"
+}

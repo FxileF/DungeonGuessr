@@ -1,0 +1,48 @@
+{
+  "world": "Boxes-Room",
+  "room": "BoxesRoom",
+  "shot": 4,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 0.477,
+    "y": 67.62,
+    "z": 17.257,
+    "yaw": -162.627,
+    "pitch": 14.402,
+    "fov": 100
+  },
+  "block": [
+    0,
+    66,
+    17
+  ],
+  "blockInRoom": [
+    8,
+    11,
+    25
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      55,
+      -8
+    ],
+    "max": [
+      22,
+      90,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.31,
+    "variety": 15,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:49:12.700348200Z",
+  "difficultyGuess": "Hard"
+}

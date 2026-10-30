@@ -1,0 +1,49 @@
+{
+  "world": "Mural-1",
+  "room": "Mural",
+  "secrets": 1,
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 3.726,
+    "y": 75.62,
+    "z": -0.585,
+    "yaw": -176.508,
+    "pitch": -10.758,
+    "fov": 100
+  },
+  "block": [
+    3,
+    74,
+    -1
+  ],
+  "blockInRoom": [
+    11,
+    9,
+    7
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      65,
+      -8
+    ],
+    "max": [
+      23,
+      98,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.931,
+    "variety": 9,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:54:21.427142Z",
+  "difficultyGuess": "Hard"
+}

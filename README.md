@@ -60,8 +60,10 @@ public/data/screenshots.json   screenshot → room manifest (generated)
 public/data/rooms.json         all dungeon rooms (generated)
 scripts/import-screenshots.mjs converts screenshots-src/ → public/
 scripts/room-aliases.json      fixes for file names that don't match a room
+scripts/review-captures.mjs    local review tool for the capture mod's shots (npm run review)
 scripts/update-rooms.mjs       re-downloads room data from Odin
 .github/workflows/deploy.yml   GitHub Pages deployment
+capture-mod/                   Fabric mod that takes screenshots automatically (not part of the site)
 ```
 
 ## Adding screenshots
@@ -86,6 +88,14 @@ spaces; the value is the room `id`, or `null` to deliberately skip it):
 ```
 
 `Cordidor-1-Easy.png` is currently skipped this way until its real room name is known.
+
+### Automatic screenshots
+
+`capture-mod/` is a Fabric mod for Minecraft 26.1.2 that visits every room on a local copy of the
+SRM route-recorder server and saves labelled screenshots, each with a `.json` recording where it
+was taken (see [capture-mod/README.md](capture-mod/README.md)). Reviewed shots go in
+`screenshots-src/auto/` together with their `.json`. The import script reads subfolders and adds
+the position to the manifest as `pose`.
 
 ## Room data
 

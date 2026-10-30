@@ -1,0 +1,49 @@
+{
+  "world": "Black-Flag-3",
+  "room": "BlackFlag",
+  "secrets": 3,
+  "shot": 4,
+  "difficulty": "Medium",
+  "camera": {
+    "x": 11.32,
+    "y": 61.62,
+    "z": -2.559,
+    "yaw": -16.885,
+    "pitch": -0.682,
+    "fov": 100
+  },
+  "block": [
+    11,
+    60,
+    -3
+  ],
+  "blockInRoom": [
+    19,
+    9,
+    5
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      51,
+      -8
+    ],
+    "max": [
+      23,
+      107,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.984,
+    "variety": 13,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:48:50.906367700Z",
+  "difficultyGuess": "Medium"
+}

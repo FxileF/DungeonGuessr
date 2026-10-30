@@ -1,0 +1,49 @@
+{
+  "world": "Market-5",
+  "room": "Market",
+  "secrets": 5,
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 25.293,
+    "y": 68.62,
+    "z": 16.534,
+    "yaw": -69.448,
+    "pitch": 7.736,
+    "fov": 100
+  },
+  "block": [
+    25,
+    67,
+    16
+  ],
+  "blockInRoom": [
+    33,
+    11,
+    24
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      54,
+      99,
+      54
+    ]
+  },
+  "view": {
+    "medianDistance": 4.32,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:53:48.501913600Z",
+  "difficultyGuess": "Hard"
+}

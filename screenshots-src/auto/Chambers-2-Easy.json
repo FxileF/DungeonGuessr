@@ -1,0 +1,49 @@
+{
+  "world": "Chambers-5",
+  "room": "Chambers",
+  "secrets": 5,
+  "shot": 2,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 16.451,
+    "y": 81.62,
+    "z": 44.488,
+    "yaw": 55.187,
+    "pitch": 6.365,
+    "fov": 100
+  },
+  "block": [
+    16,
+    80,
+    44
+  ],
+  "blockInRoom": [
+    24,
+    28,
+    52
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      52,
+      -8
+    ],
+    "max": [
+      54,
+      99,
+      54
+    ]
+  },
+  "view": {
+    "medianDistance": 4.896,
+    "variety": 12,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:50:04.898393Z",
+  "difficultyGuess": "Hard"
+}

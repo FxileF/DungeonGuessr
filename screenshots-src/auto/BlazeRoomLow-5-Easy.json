@@ -1,0 +1,49 @@
+{
+  "world": "Blaze-Room-1-Low",
+  "room": "BlazeRoomLow",
+  "secrets": 1,
+  "shot": 5,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 5.721,
+    "y": 120.62,
+    "z": 10.501,
+    "yaw": -78.621,
+    "pitch": 14.506,
+    "fov": 100
+  },
+  "block": [
+    5,
+    119,
+    10
+  ],
+  "blockInRoom": [
+    13,
+    54,
+    18
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      65,
+      -8
+    ],
+    "max": [
+      22,
+      133,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.539,
+    "variety": 10,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:49:02.311503900Z",
+  "difficultyGuess": "Hard"
+}

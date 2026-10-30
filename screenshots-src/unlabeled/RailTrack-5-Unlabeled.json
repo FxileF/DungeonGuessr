@@ -1,0 +1,49 @@
+{
+  "world": "Rail-Track-9",
+  "room": "RailTrack",
+  "secrets": 9,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 46.695,
+    "y": 50.62,
+    "z": 43.44,
+    "yaw": 80.75,
+    "pitch": -5.051,
+    "fov": 100
+  },
+  "block": [
+    46,
+    49,
+    43
+  ],
+  "blockInRoom": [
+    54,
+    4,
+    51
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      45,
+      -8
+    ],
+    "max": [
+      54,
+      99,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 7.69,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:55:41.065809100Z",
+  "difficultyGuess": "Medium"
+}

@@ -1,0 +1,49 @@
+{
+  "world": "Double-Diamond-3",
+  "room": "DoubleDiamond",
+  "secrets": 3,
+  "shot": 3,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 10.552,
+    "y": 84.62,
+    "z": 10.574,
+    "yaw": 123.154,
+    "pitch": -13.719,
+    "fov": 100
+  },
+  "block": [
+    10,
+    83,
+    10
+  ],
+  "blockInRoom": [
+    18,
+    27,
+    18
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      22,
+      107,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 11.819,
+    "variety": 17,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:51:04.084708600Z",
+  "difficultyGuess": "Easy"
+}

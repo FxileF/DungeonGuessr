@@ -1,0 +1,49 @@
+{
+  "world": "Drop-2",
+  "room": "Drop",
+  "secrets": 2,
+  "shot": 3,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 16.336,
+    "y": 70.62,
+    "z": 5.214,
+    "yaw": 21.626,
+    "pitch": -5.491,
+    "fov": 100
+  },
+  "block": [
+    16,
+    69,
+    5
+  ],
+  "blockInRoom": [
+    24,
+    13,
+    13
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 7.021,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:51:25.368473300Z",
+  "difficultyGuess": "Medium"
+}

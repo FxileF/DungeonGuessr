@@ -1,0 +1,49 @@
+{
+  "world": "Basement-1",
+  "room": "Basement",
+  "secrets": 1,
+  "shot": 1,
+  "difficulty": "Medium",
+  "camera": {
+    "x": 6.378,
+    "y": 70.62,
+    "z": -0.236,
+    "yaw": -128.788,
+    "pitch": 15.906,
+    "fov": 100
+  },
+  "block": [
+    6,
+    69,
+    -1
+  ],
+  "blockInRoom": [
+    14,
+    6,
+    7
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      63,
+      -8
+    ],
+    "max": [
+      23,
+      100,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 4.087,
+    "variety": 12,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:48:33.895995Z",
+  "difficultyGuess": "Hard"
+}

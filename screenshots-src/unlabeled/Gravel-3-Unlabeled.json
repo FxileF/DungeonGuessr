@@ -1,0 +1,49 @@
+{
+  "world": "Gravel-6",
+  "room": "Gravel",
+  "secrets": 6,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 5.282,
+    "y": 70.62,
+    "z": 16.76,
+    "yaw": 155.148,
+    "pitch": 10.622,
+    "fov": 100
+  },
+  "block": [
+    5,
+    69,
+    16
+  ],
+  "blockInRoom": [
+    13,
+    13,
+    24
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      87,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.367,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:52:18.942596Z",
+  "difficultyGuess": "Hard"
+}

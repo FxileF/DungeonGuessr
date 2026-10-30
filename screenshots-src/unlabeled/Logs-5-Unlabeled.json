@@ -1,0 +1,49 @@
+{
+  "world": "Logs-4",
+  "room": "Logs",
+  "secrets": 4,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 4.34,
+    "y": 71.62,
+    "z": 7.762,
+    "yaw": 96.76,
+    "pitch": -9.214,
+    "fov": 100
+  },
+  "block": [
+    4,
+    70,
+    7
+  ],
+  "blockInRoom": [
+    12,
+    4,
+    15
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 7.906,
+    "variety": 15,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:53:29.241037100Z",
+  "difficultyGuess": "Medium"
+}

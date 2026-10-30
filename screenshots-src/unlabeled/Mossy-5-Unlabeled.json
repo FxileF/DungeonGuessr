@@ -1,0 +1,49 @@
+{
+  "world": "Mossy-4",
+  "room": "Mossy",
+  "secrets": 4,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 0.244,
+    "y": 94.62,
+    "z": 79.295,
+    "yaw": -90.184,
+    "pitch": -1.687,
+    "fov": 100
+  },
+  "block": [
+    0,
+    93,
+    79
+  ],
+  "blockInRoom": [
+    8,
+    27,
+    87
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      119
+    ]
+  },
+  "view": {
+    "medianDistance": 12.286,
+    "variety": 9,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:54:11.592411200Z",
+  "difficultyGuess": "Easy"
+}

@@ -1,0 +1,49 @@
+{
+  "world": "Slabs-2",
+  "room": "Slabs",
+  "secrets": 2,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 6.717,
+    "y": 87.62,
+    "z": -3.577,
+    "yaw": -1.542,
+    "pitch": 26.811,
+    "fov": 100
+  },
+  "block": [
+    6,
+    86,
+    -4
+  ],
+  "blockInRoom": [
+    14,
+    20,
+    4
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.993,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:56:53.590815600Z",
+  "difficultyGuess": "Hard"
+}

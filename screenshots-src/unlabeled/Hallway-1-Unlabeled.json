@@ -1,0 +1,49 @@
+{
+  "world": "Hallway-3",
+  "room": "Hallway",
+  "secrets": 3,
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 76.425,
+    "y": 70.62,
+    "z": 9.324,
+    "yaw": 112.656,
+    "pitch": 16.221,
+    "fov": 100
+  },
+  "block": [
+    76,
+    69,
+    9
+  ],
+  "blockInRoom": [
+    84,
+    3,
+    17
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      118,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 5.678,
+    "variety": 9,
+    "escapeFraction": 0.012
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:52:28.296883400Z",
+  "difficultyGuess": "Medium"
+}

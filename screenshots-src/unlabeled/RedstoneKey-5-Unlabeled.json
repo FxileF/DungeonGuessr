@@ -1,0 +1,49 @@
+{
+  "world": "Redstone-Key-3",
+  "room": "RedstoneKey",
+  "secrets": 3,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 10.571,
+    "y": 68.62,
+    "z": -2.295,
+    "yaw": 59.266,
+    "pitch": -14.013,
+    "fov": 100
+  },
+  "block": [
+    10,
+    67,
+    -3
+  ],
+  "blockInRoom": [
+    18,
+    11,
+    5
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 6.234,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:56:02.259940100Z",
+  "difficultyGuess": "Medium"
+}

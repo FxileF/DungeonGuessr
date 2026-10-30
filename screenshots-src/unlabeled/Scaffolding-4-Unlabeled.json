@@ -1,0 +1,49 @@
+{
+  "world": "Scaffolding-2",
+  "room": "Scaffolding",
+  "secrets": 2,
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": -1.358,
+    "y": 84.62,
+    "z": 12.209,
+    "yaw": -136.261,
+    "pitch": -1.394,
+    "fov": 100
+  },
+  "block": [
+    -2,
+    83,
+    12
+  ],
+  "blockInRoom": [
+    6,
+    17,
+    20
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 10.504,
+    "variety": 22,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:56:27.951296500Z",
+  "difficultyGuess": "Easy"
+}

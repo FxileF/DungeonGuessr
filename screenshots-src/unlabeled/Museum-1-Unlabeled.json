@@ -1,0 +1,49 @@
+{
+  "world": "Museum-5",
+  "room": "Museum",
+  "secrets": 5,
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 2.756,
+    "y": 82.62,
+    "z": 23.768,
+    "yaw": -53.439,
+    "pitch": 5.779,
+    "fov": 100
+  },
+  "block": [
+    2,
+    81,
+    23
+  ],
+  "blockInRoom": [
+    10,
+    23,
+    31
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      58,
+      -8
+    ],
+    "max": [
+      55,
+      119,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 4.777,
+    "variety": 16,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:54:25.041300600Z",
+  "difficultyGuess": "Hard"
+}

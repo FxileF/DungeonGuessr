@@ -1,0 +1,49 @@
+{
+  "world": "Leaves-1",
+  "room": "Leaves",
+  "secrets": 1,
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": -1.378,
+    "y": 82.62,
+    "z": -0.471,
+    "yaw": -140.986,
+    "pitch": 9.824,
+    "fov": 100
+  },
+  "block": [
+    -2,
+    81,
+    -1
+  ],
+  "blockInRoom": [
+    6,
+    15,
+    7
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.839,
+    "variety": 8,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:53:17.985528600Z",
+  "difficultyGuess": "Medium"
+}

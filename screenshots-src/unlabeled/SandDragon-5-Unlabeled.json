@@ -1,0 +1,49 @@
+{
+  "world": "Sand-Dragon-1",
+  "room": "SandDragon",
+  "secrets": 1,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 6.628,
+    "y": 73.62,
+    "z": 10.455,
+    "yaw": 139.721,
+    "pitch": 11.27,
+    "fov": 100
+  },
+  "block": [
+    6,
+    72,
+    10
+  ],
+  "blockInRoom": [
+    14,
+    7,
+    18
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      65,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 8.625,
+    "variety": 15,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:56:17.999579100Z",
+  "difficultyGuess": "Medium"
+}

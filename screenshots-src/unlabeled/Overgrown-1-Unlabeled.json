@@ -1,0 +1,49 @@
+{
+  "world": "Overgrown-3",
+  "room": "Overgrown",
+  "secrets": 3,
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 8.318,
+    "y": 71.62,
+    "z": 18.245,
+    "yaw": 81.448,
+    "pitch": 20.73,
+    "fov": 100
+  },
+  "block": [
+    8,
+    70,
+    18
+  ],
+  "blockInRoom": [
+    16,
+    4,
+    26
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 4.566,
+    "variety": 25,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:54:35.550558300Z",
+  "difficultyGuess": "Hard"
+}

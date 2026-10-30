@@ -1,0 +1,49 @@
+{
+  "world": "Silvers-Sword-1",
+  "room": "SilversSword",
+  "secrets": 1,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": -3.655,
+    "y": 70.62,
+    "z": 18.598,
+    "yaw": -154.57,
+    "pitch": -11.691,
+    "fov": 100
+  },
+  "block": [
+    -4,
+    69,
+    18
+  ],
+  "blockInRoom": [
+    4,
+    3,
+    26
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.513,
+    "variety": 13,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:56:42.901191700Z",
+  "difficultyGuess": "Hard"
+}

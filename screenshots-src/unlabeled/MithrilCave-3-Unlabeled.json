@@ -1,0 +1,49 @@
+{
+  "world": "Mithril-Cave-10",
+  "room": "MithrilCave",
+  "secrets": 10,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 27.726,
+    "y": 91.62,
+    "z": 9.655,
+    "yaw": 64.716,
+    "pitch": 12.83,
+    "fov": 100
+  },
+  "block": [
+    27,
+    90,
+    9
+  ],
+  "blockInRoom": [
+    35,
+    66,
+    17
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      24,
+      -8
+    ],
+    "max": [
+      55,
+      127,
+      54
+    ]
+  },
+  "view": {
+    "medianDistance": 5.589,
+    "variety": 19,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:54:05.212785200Z",
+  "difficultyGuess": "Medium"
+}

@@ -8,7 +8,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "update-rooms": "node scripts/update-rooms.mjs",
-    "import-screenshots": "node scripts/import-screenshots.mjs"
+    "import-screenshots": "node scripts/import-screenshots.mjs",
+    "review": "node scripts/review-captures.mjs",
+    "check-rooms": "node scripts/check-room-names.mjs"
   },
   "devDependencies": {
     "sharp": "^0.35.5",

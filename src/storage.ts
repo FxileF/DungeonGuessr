@@ -86,9 +86,9 @@ export function recordGame(score: number, max: number) {
   });
 }
 
-export interface Prefs { filterByShape: boolean; difficulty: string; includePuzzles: boolean }
+export interface Prefs { filterByShape: boolean; difficulty: string; includePuzzles: boolean; includeUnlabeled: boolean }
 
-const DEFAULT_PREFS: Prefs = { filterByShape: false, difficulty: "all", includePuzzles: true };
+const DEFAULT_PREFS: Prefs = { filterByShape: false, difficulty: "all", includePuzzles: true, includeUnlabeled: false };
 
 // Merge with defaults so prefs saved by older versions gain new fields.
 export const getPrefs = (): Prefs => ({ ...DEFAULT_PREFS, ...read<Partial<Prefs>>(PREFS_KEY, {}) });

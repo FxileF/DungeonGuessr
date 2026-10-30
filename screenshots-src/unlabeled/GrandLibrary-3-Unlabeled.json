@@ -1,0 +1,49 @@
+{
+  "world": "Grand-Library-4",
+  "room": "GrandLibrary",
+  "secrets": 4,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 27.381,
+    "y": 58.62,
+    "z": 4.776,
+    "yaw": 52.608,
+    "pitch": -10.564,
+    "fov": 100
+  },
+  "block": [
+    27,
+    57,
+    4
+  ],
+  "blockInRoom": [
+    35,
+    3,
+    12
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      54,
+      -8
+    ],
+    "max": [
+      54,
+      111,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 7.945,
+    "variety": 16,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:52:03.245776500Z",
+  "difficultyGuess": "Medium"
+}

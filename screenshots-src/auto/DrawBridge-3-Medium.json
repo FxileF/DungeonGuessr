@@ -1,0 +1,49 @@
+{
+  "world": "Draw-Bridge-6",
+  "room": "DrawBridge",
+  "secrets": 6,
+  "shot": 3,
+  "difficulty": "Medium",
+  "camera": {
+    "x": 15.792,
+    "y": 64.62,
+    "z": 10.377,
+    "yaw": 167.501,
+    "pitch": 19.086,
+    "fov": 100
+  },
+  "block": [
+    15,
+    63,
+    10
+  ],
+  "blockInRoom": [
+    23,
+    7,
+    18
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      54,
+      108,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 6.251,
+    "variety": 12,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:51:20.052021100Z",
+  "difficultyGuess": "Medium"
+}

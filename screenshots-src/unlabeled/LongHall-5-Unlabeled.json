@@ -1,0 +1,49 @@
+{
+  "world": "Long-Hall-3",
+  "room": "LongHall",
+  "secrets": 3,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 18.797,
+    "y": 79.62,
+    "z": 18.259,
+    "yaw": 123.349,
+    "pitch": 23.987,
+    "fov": 100
+  },
+  "block": [
+    18,
+    78,
+    18
+  ],
+  "blockInRoom": [
+    26,
+    27,
+    26
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      51,
+      -8
+    ],
+    "max": [
+      23,
+      107,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 5.04,
+    "variety": 8,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:53:34.635769300Z",
+  "difficultyGuess": "Hard"
+}

@@ -1,0 +1,49 @@
+{
+  "world": "Carpets-1",
+  "room": "Carpets",
+  "secrets": 1,
+  "shot": 5,
+  "difficulty": "Medium",
+  "camera": {
+    "x": 9.469,
+    "y": 68.62,
+    "z": 6.47,
+    "yaw": -109.456,
+    "pitch": -12.106,
+    "fov": 100
+  },
+  "block": [
+    9,
+    67,
+    6
+  ],
+  "blockInRoom": [
+    17,
+    11,
+    14
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      23,
+      108,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.564,
+    "variety": 12,
+    "escapeFraction": 0.012
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:49:40.003133600Z",
+  "difficultyGuess": "Hard"
+}

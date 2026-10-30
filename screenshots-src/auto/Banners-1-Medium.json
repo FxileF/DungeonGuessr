@@ -1,0 +1,49 @@
+{
+  "world": "Banners-1",
+  "room": "Banners",
+  "secrets": 1,
+  "shot": 1,
+  "difficulty": "Medium",
+  "camera": {
+    "x": 11.661,
+    "y": 70.62,
+    "z": 0.272,
+    "yaw": 37.484,
+    "pitch": 2.692,
+    "fov": 100
+  },
+  "block": [
+    11,
+    69,
+    0
+  ],
+  "blockInRoom": [
+    19,
+    3,
+    8
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 5.549,
+    "variety": 12,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:48:28.771318600Z",
+  "difficultyGuess": "Medium"
+}

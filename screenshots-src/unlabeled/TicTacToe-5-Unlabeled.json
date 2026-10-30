@@ -1,0 +1,49 @@
+{
+  "world": "Tic-Tac-Toe-1",
+  "room": "TicTacToe",
+  "secrets": 1,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 4.517,
+    "y": 70.62,
+    "z": 8.763,
+    "yaw": -162.242,
+    "pitch": -2.125,
+    "fov": 100
+  },
+  "block": [
+    4,
+    69,
+    8
+  ],
+  "blockInRoom": [
+    12,
+    3,
+    16
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      100,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 7.021,
+    "variety": 12,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:57:59.076612100Z",
+  "difficultyGuess": "Medium"
+}

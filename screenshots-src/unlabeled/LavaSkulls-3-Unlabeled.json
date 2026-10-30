@@ -1,0 +1,49 @@
+{
+  "world": "Lava-Skulls-3",
+  "room": "LavaSkulls",
+  "secrets": 3,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 3.714,
+    "y": 68.62,
+    "z": 5.61,
+    "yaw": 144.881,
+    "pitch": 2.721,
+    "fov": 100
+  },
+  "block": [
+    3,
+    67,
+    5
+  ],
+  "blockInRoom": [
+    11,
+    8,
+    13
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      59,
+      -8
+    ],
+    "max": [
+      22,
+      109,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.801,
+    "variety": 12,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:53:06.924718800Z",
+  "difficultyGuess": "Medium"
+}

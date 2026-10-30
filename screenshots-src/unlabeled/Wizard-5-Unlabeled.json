@@ -1,0 +1,49 @@
+{
+  "world": "Wizard-4",
+  "room": "Wizard",
+  "secrets": 4,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 6.235,
+    "y": 53.62,
+    "z": 53.242,
+    "yaw": 175.366,
+    "pitch": 6.539,
+    "fov": 100
+  },
+  "block": [
+    6,
+    52,
+    53
+  ],
+  "blockInRoom": [
+    14,
+    6,
+    61
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      46,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      86
+    ]
+  },
+  "view": {
+    "medianDistance": 10.696,
+    "variety": 13,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:58:57.738816Z",
+  "difficultyGuess": "Easy"
+}

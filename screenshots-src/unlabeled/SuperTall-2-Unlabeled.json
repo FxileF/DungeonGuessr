@@ -1,0 +1,49 @@
+{
+  "world": "Super-Tall-6",
+  "room": "SuperTall",
+  "secrets": 6,
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 30.718,
+    "y": 129.62,
+    "z": 24.37,
+    "yaw": 106.179,
+    "pitch": 15.969,
+    "fov": 100
+  },
+  "block": [
+    30,
+    128,
+    24
+  ],
+  "blockInRoom": [
+    38,
+    67,
+    32
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      61,
+      -8
+    ],
+    "max": [
+      55,
+      159,
+      54
+    ]
+  },
+  "view": {
+    "medianDistance": 13.581,
+    "variety": 13,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:57:35.933666300Z",
+  "difficultyGuess": "Easy"
+}

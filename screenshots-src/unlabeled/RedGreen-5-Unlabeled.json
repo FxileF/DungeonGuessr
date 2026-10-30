@@ -1,0 +1,49 @@
+{
+  "world": "Red-Green-3",
+  "room": "RedGreen",
+  "secrets": 3,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 11.372,
+    "y": 84.62,
+    "z": 1.278,
+    "yaw": 149.132,
+    "pitch": -4.466,
+    "fov": 100
+  },
+  "block": [
+    11,
+    83,
+    1
+  ],
+  "blockInRoom": [
+    19,
+    32,
+    9
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      51,
+      -8
+    ],
+    "max": [
+      23,
+      107,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 6.602,
+    "variety": 22,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:55:57.175827100Z",
+  "difficultyGuess": "Medium"
+}

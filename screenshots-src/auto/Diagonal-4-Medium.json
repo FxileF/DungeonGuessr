@@ -1,0 +1,49 @@
+{
+  "world": "Diagonal-4",
+  "room": "Diagonal",
+  "secrets": 4,
+  "shot": 4,
+  "difficulty": "Medium",
+  "camera": {
+    "x": 1.357,
+    "y": 73.62,
+    "z": 23.542,
+    "yaw": -69.804,
+    "pitch": 10.439,
+    "fov": 100
+  },
+  "block": [
+    1,
+    72,
+    23
+  ],
+  "blockInRoom": [
+    9,
+    16,
+    31
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      87
+    ]
+  },
+  "view": {
+    "medianDistance": 9.127,
+    "variety": 17,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:50:37.930761600Z",
+  "difficultyGuess": "Easy"
+}

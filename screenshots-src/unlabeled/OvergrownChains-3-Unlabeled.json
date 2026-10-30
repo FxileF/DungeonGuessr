@@ -1,0 +1,49 @@
+{
+  "world": "Overgrown-Chains-2",
+  "room": "OvergrownChains",
+  "secrets": 2,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 5.65,
+    "y": 67.62,
+    "z": 4.427,
+    "yaw": -52.384,
+    "pitch": 11.641,
+    "fov": 100
+  },
+  "block": [
+    5,
+    66,
+    4
+  ],
+  "blockInRoom": [
+    13,
+    3,
+    12
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      63,
+      -8
+    ],
+    "max": [
+      23,
+      107,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 8.029,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:54:41.974669900Z",
+  "difficultyGuess": "Medium"
+}

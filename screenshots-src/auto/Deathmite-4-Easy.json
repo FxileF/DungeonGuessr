@@ -1,0 +1,49 @@
+{
+  "world": "Deathmite-6",
+  "room": "Deathmite",
+  "secrets": 6,
+  "shot": 4,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 6.655,
+    "y": 83.62,
+    "z": 77.21,
+    "yaw": 144.157,
+    "pitch": 4.178,
+    "fov": 100
+  },
+  "block": [
+    6,
+    82,
+    77
+  ],
+  "blockInRoom": [
+    14,
+    26,
+    85
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      86
+    ]
+  },
+  "view": {
+    "medianDistance": 6.052,
+    "variety": 18,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:50:32.388391600Z",
+  "difficultyGuess": "Medium"
+}

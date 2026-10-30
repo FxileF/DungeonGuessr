@@ -1,0 +1,49 @@
+{
+  "world": "Chains-2",
+  "room": "Chains",
+  "secrets": 2,
+  "shot": 1,
+  "difficulty": "Hard",
+  "camera": {
+    "x": 10.491,
+    "y": 77.62,
+    "z": 3.35,
+    "yaw": -167.185,
+    "pitch": -14.014,
+    "fov": 100
+  },
+  "block": [
+    10,
+    76,
+    3
+  ],
+  "blockInRoom": [
+    18,
+    10,
+    11
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 7.188,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:49:59.071145900Z",
+  "difficultyGuess": "Medium"
+}

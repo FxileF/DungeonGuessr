@@ -1,0 +1,49 @@
+{
+  "world": "Mushroom-1",
+  "room": "Mushroom",
+  "secrets": 1,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 13.297,
+    "y": 70.62,
+    "z": 16.578,
+    "yaw": 131.299,
+    "pitch": -1.782,
+    "fov": 100
+  },
+  "block": [
+    13,
+    69,
+    16
+  ],
+  "blockInRoom": [
+    21,
+    3,
+    24
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 6.93,
+    "variety": 18,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:54:31.505790300Z",
+  "difficultyGuess": "Medium"
+}

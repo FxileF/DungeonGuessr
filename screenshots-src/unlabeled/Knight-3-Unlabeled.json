@@ -1,0 +1,49 @@
+{
+  "world": "Knight-3",
+  "room": "Knight",
+  "secrets": 3,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 5.754,
+    "y": 69.62,
+    "z": 7.339,
+    "yaw": 29.031,
+    "pitch": 4.984,
+    "fov": 100
+  },
+  "block": [
+    5,
+    68,
+    7
+  ],
+  "blockInRoom": [
+    13,
+    3,
+    15
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      65,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.093,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:52:56.176076Z",
+  "difficultyGuess": "Hard"
+}

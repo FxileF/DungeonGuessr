@@ -1,0 +1,49 @@
+{
+  "world": "Sarcophagus-3",
+  "room": "Sarcophagus",
+  "secrets": 3,
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 7.32,
+    "y": 73.62,
+    "z": 8.464,
+    "yaw": 2.62,
+    "pitch": -8.966,
+    "fov": 100
+  },
+  "block": [
+    7,
+    72,
+    8
+  ],
+  "blockInRoom": [
+    15,
+    17,
+    16
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      55,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 6.091,
+    "variety": 13,
+    "escapeFraction": 0.012
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:56:20.893423900Z",
+  "difficultyGuess": "Medium"
+}

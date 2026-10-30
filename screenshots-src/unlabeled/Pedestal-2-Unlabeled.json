@@ -1,0 +1,49 @@
+{
+  "world": "Pedestal-5",
+  "room": "Pedestal",
+  "secrets": 5,
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 16.46,
+    "y": 70.62,
+    "z": 3.476,
+    "yaw": -118.215,
+    "pitch": 3.935,
+    "fov": 100
+  },
+  "block": [
+    16,
+    69,
+    3
+  ],
+  "blockInRoom": [
+    24,
+    11,
+    11
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      58,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 5.182,
+    "variety": 11,
+    "escapeFraction": 0.024
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:54:51.781285600Z",
+  "difficultyGuess": "Hard"
+}

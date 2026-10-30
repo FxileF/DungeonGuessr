@@ -1,0 +1,49 @@
+{
+  "world": "Pit-5",
+  "room": "Pit",
+  "secrets": 5,
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": -3.203,
+    "y": 82.62,
+    "z": 6.359,
+    "yaw": -47.378,
+    "pitch": 26.424,
+    "fov": 100
+  },
+  "block": [
+    -4,
+    81,
+    6
+  ],
+  "blockInRoom": [
+    4,
+    25,
+    14
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      118
+    ]
+  },
+  "view": {
+    "medianDistance": 6.724,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:55:01.828436200Z",
+  "difficultyGuess": "Medium"
+}

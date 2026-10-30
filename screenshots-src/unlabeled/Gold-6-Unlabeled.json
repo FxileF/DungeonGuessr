@@ -1,0 +1,49 @@
+{
+  "world": "Gold-1",
+  "room": "Gold",
+  "secrets": 1,
+  "shot": 6,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 1.436,
+    "y": 72.62,
+    "z": 5.347,
+    "yaw": 64.807,
+    "pitch": -3.737,
+    "fov": 100
+  },
+  "block": [
+    1,
+    71,
+    5
+  ],
+  "blockInRoom": [
+    9,
+    5,
+    13
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      100,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 7.43,
+    "variety": 14,
+    "escapeFraction": 0.024
+  },
+  "image": {
+    "width": 1600,
+    "height": 900
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T14:40:05.896904800Z",
+  "difficultyGuess": "Medium"
+}

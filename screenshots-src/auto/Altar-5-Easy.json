@@ -1,0 +1,49 @@
+{
+  "world": "Altar-6",
+  "room": "Altar",
+  "secrets": 6,
+  "shot": 5,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 9.49,
+    "y": 69.62,
+    "z": 4.306,
+    "yaw": 80.328,
+    "pitch": 0.314,
+    "fov": 100
+  },
+  "block": [
+    9,
+    68,
+    4
+  ],
+  "blockInRoom": [
+    17,
+    27,
+    12
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      41,
+      -8
+    ],
+    "max": [
+      55,
+      110,
+      54
+    ]
+  },
+  "view": {
+    "medianDistance": 11.175,
+    "variety": 9,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:48:00.030799600Z",
+  "difficultyGuess": "Easy"
+}

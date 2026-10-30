@@ -1,0 +1,48 @@
+{
+  "world": "Creeper-Room",
+  "room": "CreeperRoom",
+  "shot": 2,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 10.459,
+    "y": 70.62,
+    "z": 11.445,
+    "yaw": -30.301,
+    "pitch": 9.181,
+    "fov": 100
+  },
+  "block": [
+    10,
+    69,
+    11
+  ],
+  "blockInRoom": [
+    18,
+    13,
+    19
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      22,
+      100,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 7.042,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:50:15.560484500Z",
+  "difficultyGuess": "Medium"
+}

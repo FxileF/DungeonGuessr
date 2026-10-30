@@ -1,0 +1,49 @@
+{
+  "world": "Locked-Away-1",
+  "room": "LockedAway",
+  "secrets": 1,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 13.786,
+    "y": 76.62,
+    "z": 15.419,
+    "yaw": -79.587,
+    "pitch": -4.728,
+    "fov": 100
+  },
+  "block": [
+    13,
+    75,
+    15
+  ],
+  "blockInRoom": [
+    21,
+    9,
+    23
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 6.449,
+    "variety": 15,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:53:23.896737200Z",
+  "difficultyGuess": "Medium"
+}

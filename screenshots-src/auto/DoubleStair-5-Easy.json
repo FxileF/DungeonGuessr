@@ -1,0 +1,49 @@
+{
+  "world": "Double-Stair-3",
+  "room": "DoubleStair",
+  "secrets": 3,
+  "shot": 5,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 7.433,
+    "y": 66.62,
+    "z": 3.338,
+    "yaw": -143.664,
+    "pitch": -14.391,
+    "fov": 100
+  },
+  "block": [
+    7,
+    65,
+    3
+  ],
+  "blockInRoom": [
+    15,
+    9,
+    11
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      22,
+      108,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 9.158,
+    "variety": 16,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:51:10.463336200Z",
+  "difficultyGuess": "Easy"
+}

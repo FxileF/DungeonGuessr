@@ -1,0 +1,49 @@
+{
+  "world": "Balcony-4",
+  "room": "Balcony",
+  "secrets": 4,
+  "shot": 3,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 33.622,
+    "y": 52.62,
+    "z": 11.392,
+    "yaw": 113.236,
+    "pitch": -6,
+    "fov": 100
+  },
+  "block": [
+    33,
+    51,
+    11
+  ],
+  "blockInRoom": [
+    41,
+    20,
+    19
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      31,
+      -8
+    ],
+    "max": [
+      55,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 11.752,
+    "variety": 13,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:48:24.717957200Z",
+  "difficultyGuess": "Easy"
+}

@@ -1,0 +1,49 @@
+{
+  "world": "Atlas-6",
+  "room": "Atlas",
+  "secrets": 6,
+  "shot": 3,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 46.645,
+    "y": 80.62,
+    "z": 25.727,
+    "yaw": -35.196,
+    "pitch": 6.659,
+    "fov": 100
+  },
+  "block": [
+    46,
+    79,
+    25
+  ],
+  "blockInRoom": [
+    54,
+    31,
+    33
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      48,
+      -8
+    ],
+    "max": [
+      54,
+      99,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 4.829,
+    "variety": 8,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:48:19.322640100Z",
+  "difficultyGuess": "Hard"
+}

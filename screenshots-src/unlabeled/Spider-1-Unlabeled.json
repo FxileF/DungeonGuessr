@@ -1,0 +1,49 @@
+{
+  "world": "Spider-9",
+  "room": "Spider",
+  "secrets": 9,
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 0.509,
+    "y": 57.62,
+    "z": 2.256,
+    "yaw": -25.133,
+    "pitch": 12.152,
+    "fov": 100
+  },
+  "block": [
+    0,
+    56,
+    2
+  ],
+  "blockInRoom": [
+    8,
+    31,
+    10
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      25,
+      -8
+    ],
+    "max": [
+      54,
+      98,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 8.661,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:57:13.859694700Z",
+  "difficultyGuess": "Medium"
+}

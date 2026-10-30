@@ -1,0 +1,49 @@
+{
+  "world": "Crypt-5",
+  "room": "Crypt",
+  "secrets": 5,
+  "shot": 3,
+  "difficulty": "Medium",
+  "camera": {
+    "x": 5.246,
+    "y": 61.62,
+    "z": 5.253,
+    "yaw": -20.197,
+    "pitch": -9.709,
+    "fov": 100
+  },
+  "block": [
+    5,
+    60,
+    5
+  ],
+  "blockInRoom": [
+    13,
+    4,
+    13
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      54,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.365,
+    "variety": 17,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:50:21.378324600Z",
+  "difficultyGuess": "Hard"
+}

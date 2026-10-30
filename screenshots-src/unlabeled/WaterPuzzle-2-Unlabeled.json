@@ -1,0 +1,48 @@
+{
+  "world": "Water_Puzzle",
+  "room": "WaterPuzzle",
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 15.631,
+    "y": 80.62,
+    "z": -2.492,
+    "yaw": 97.889,
+    "pitch": -14.411,
+    "fov": 100
+  },
+  "block": [
+    15,
+    79,
+    -3
+  ],
+  "blockInRoom": [
+    23,
+    29,
+    5
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      50,
+      -8
+    ],
+    "max": [
+      23,
+      100,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 5.207,
+    "variety": 9,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:58:29.009023300Z",
+  "difficultyGuess": "Hard"
+}

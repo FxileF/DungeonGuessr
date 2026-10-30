@@ -1,0 +1,49 @@
+{
+  "world": "Layers-8",
+  "room": "Layers",
+  "secrets": 8,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": -0.724,
+    "y": 77.62,
+    "z": 50.468,
+    "yaw": -107.938,
+    "pitch": -3.581,
+    "fov": 100
+  },
+  "block": [
+    -1,
+    76,
+    50
+  ],
+  "blockInRoom": [
+    7,
+    20,
+    58
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      55,
+      107,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 5.244,
+    "variety": 9,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:53:12.170906200Z",
+  "difficultyGuess": "Hard"
+}

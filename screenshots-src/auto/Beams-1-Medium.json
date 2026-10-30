@@ -1,0 +1,49 @@
+{
+  "world": "Beams-2",
+  "room": "Beams",
+  "secrets": 2,
+  "shot": 1,
+  "difficulty": "Medium",
+  "camera": {
+    "x": 7.597,
+    "y": 72.62,
+    "z": 15.339,
+    "yaw": 39.157,
+    "pitch": 6.26,
+    "fov": 100
+  },
+  "block": [
+    7,
+    71,
+    15
+  ],
+  "blockInRoom": [
+    15,
+    5,
+    23
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      107,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 5.632,
+    "variety": 12,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:48:39.031729300Z",
+  "difficultyGuess": "Medium"
+}

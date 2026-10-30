@@ -1,7 +1,56 @@
 {
-  "_comment": "Maps screenshot file-name room names (no spaces, any case) to room ids in public/data/rooms.json when they don't match automatically. Use null to skip a name.",
+  "_comment": "Maps screenshot file-name room names (no spaces, any case) to room ids in public/data/rooms.json when they don't match automatically. Use null to skip a name. NAME-SECRETS (e.g. WATERFALL-2) only applies to capture-mod shots with that secret count, for server worlds sharing a name. Keys starting with _ are notes and are ignored. Check with: npm run check-rooms -- \"<server>/polar_worlds\"",
+
+  "_manual": "Hand-taken screenshots in screenshots-src/",
   "REDSTONESKULL": "redstone-key",
   "CREAPERBEAMS": "creeper-beams",
   "PURPLEFLAG": "purple-flags",
-  "CORDIDOR": null
+  "CORDIDOR": null,
+
+  "_server": "Route-recorder server worlds (polar_worlds) named differently from rooms.json",
+  "BLAZEROOMHIGH": "higher-blaze",
+  "BLAZEROOMLOW": "lower-blaze",
+  "BOXESROOM": "boulder",
+  "CREEPERROOM": "creeper-beams",
+  "DINODIGSITE": "dino-site",
+  "MITHRILCAVE": "mines",
+  "SEWER": "pipes",
+  "SILVERSSWORD": "silver-sword",
+  "TELEPORTPADROOM": "teleport-maze",
+  "THREECHESTS": "three-weirdos",
+  "TRIVIAROOM": "quiz",
+  "WATERPUZZLE": "water-board",
+  "WITHERMANCERS": "withermancer",
+  "WATERFALL-2": "small-waterfall",
+  "RAILTRACK": "rails",
+  "DRAWBRIDGE": "pirate",
+  "ICESILVERFISHROOM": "ice-fill",
+  "DOUBLESTAIR": "staircase",
+  "LAVASKULLS": "lava-pit",
+
+  "_serverSkipped": "Server worlds that aren't quiz rooms",
+  "BLOODROOM": null,
+  "ENTRANCEROOM": null,
+  "FAIRYROOM": null,
+  "F7BOSS": null,
+
+  "_serverUnknown": "Server worlds whose room isn't known yet, left out of the game. Possible matches: Criss-Cross, Rare Carpets, Rare Pillars, Three Floors, Vinny 8 Ball (1 secret); Old Trap / New Trap",
+  "CRYPTS": null,
+  "TRAPHARD": null,
+  "TRAPVERYHARD": null,
+
+  "_quizRoomsWithoutServerWorld": [
+    "rooms.json (Odin) rooms with no world on the server. Name (id, secrets, shape, type)",
+    "Criss-Cross (criss-cross, 1, 1x1, normal)",
+    "Rail Track (rail-track, 3, 1x1, rare)",
+    "Rare Carpets (rare-carpets, 1, 1x1, rare)",
+    "Rare Pillars (rare-pillars, 1, 1x1, rare)",
+    "Redstone Crypt (redstone-crypt, 3, 1x1, normal)",
+    "Ritual (ritual, 3, 1x1, normal)",
+    "Stone Window (stone-window, 2, 1x1, rare)",
+    "Three Floors (three-floors, 1, 1x1, rare)",
+    "Tombstone (tombstone, 2, 1x1, rare)",
+    "Trinity (trinity, 4, 1x1, rare)",
+    "Vinny 8 Ball (vinny-8-ball, 1, 1x1, rare)"
+  ]
 }

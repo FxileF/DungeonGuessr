@@ -1,0 +1,49 @@
+{
+  "world": "Redstone-Skull-3",
+  "room": "RedstoneSkull",
+  "secrets": 3,
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 14.497,
+    "y": 70.62,
+    "z": 6.322,
+    "yaw": -18.534,
+    "pitch": 13.504,
+    "fov": 100
+  },
+  "block": [
+    14,
+    69,
+    6
+  ],
+  "blockInRoom": [
+    22,
+    5,
+    14
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      64,
+      -8
+    ],
+    "max": [
+      23,
+      108,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 4.654,
+    "variety": 13,
+    "escapeFraction": 0.012
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:56:05.171228500Z",
+  "difficultyGuess": "Hard"
+}

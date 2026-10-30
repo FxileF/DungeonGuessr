@@ -1,0 +1,49 @@
+{
+  "world": "Multicolored-1",
+  "room": "Multicolored",
+  "secrets": 1,
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 8.206,
+    "y": 70.62,
+    "z": 9.236,
+    "yaw": 47.689,
+    "pitch": 11.097,
+    "fov": 100
+  },
+  "block": [
+    8,
+    69,
+    9
+  ],
+  "blockInRoom": [
+    16,
+    3,
+    17
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.759,
+    "variety": 11,
+    "escapeFraction": 0.024
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:54:16.220545900Z",
+  "difficultyGuess": "Hard"
+}

@@ -1,0 +1,48 @@
+{
+  "world": "Trivia-Room",
+  "room": "TriviaRoom",
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 12.271,
+    "y": 90.62,
+    "z": -1.604,
+    "yaw": -45.337,
+    "pitch": 25.459,
+    "fov": 100
+  },
+  "block": [
+    12,
+    89,
+    -2
+  ],
+  "blockInRoom": [
+    20,
+    43,
+    6
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      46,
+      -8
+    ],
+    "max": [
+      22,
+      105,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.154,
+    "variety": 12,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:58:19.498774700Z",
+  "difficultyGuess": "Hard"
+}

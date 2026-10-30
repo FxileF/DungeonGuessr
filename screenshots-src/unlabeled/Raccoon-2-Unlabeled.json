@@ -1,0 +1,49 @@
+{
+  "world": "Raccoon-4",
+  "room": "Raccoon",
+  "secrets": 4,
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 13.349,
+    "y": 75.62,
+    "z": 5.775,
+    "yaw": 26.257,
+    "pitch": -3.824,
+    "fov": 100
+  },
+  "block": [
+    13,
+    74,
+    5
+  ],
+  "blockInRoom": [
+    21,
+    8,
+    13
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      97,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 6.02,
+    "variety": 11,
+    "escapeFraction": 0.012
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:55:34.251897300Z",
+  "difficultyGuess": "Medium"
+}

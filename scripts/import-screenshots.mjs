@@ -5,7 +5,11 @@
 // Source file names: RoomName-Number-Difficulty.png  (e.g. PurpleFlags-2-Medium.png)
 //   - RoomName: room name without spaces, any case. Unknown names can be mapped
 //     in scripts/room-aliases.json.
-//   - Difficulty: easy, medium or hard.
+//   - Difficulty: easy, medium or hard, or "Unlabeled" (playable, no difficulty).
+//
+// Subfolders are read too (e.g. screenshots-src/auto/ for shots from the capture
+// mod). A RoomName-Number-Difficulty.json next to an image (written by the mod)
+// adds where the shot was taken to the manifest.
 //
 // Usage: npm run import-screenshots
 
@@ -13,6 +17,7 @@ import { createHash } from "node:crypto";
 import { readdir, readFile, rm, stat, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
+import { loadRooms } from "./lib/rooms.mjs";
 
 const ROOT = new URL("../", import.meta.url);
 const SRC = new URL("screenshots-src/", ROOT);
@@ -21,58 +26,84 @@ const MANIFEST = new URL("public/data/screenshots.json", ROOT);
 const MAX_WIDTH = 1600;
 const QUALITY = 80;
 
-const rooms = JSON.parse(await readFile(new URL("public/data/rooms.json", ROOT), "utf8"));
-const aliases = JSON.parse(await readFile(new URL("room-aliases.json", import.meta.url), "utf8"));
+const roomLookup = await loadRooms();
 
-const key = (s) => s.toUpperCase().replace(/[^A-Z0-9]/g, "");
-const roomsByKey = new Map(rooms.map((r) => [key(r.name), r]));
-
-function findRoom(name) {
-  const k = key(name);
-  if (k in aliases) return aliases[k] ? rooms.find((r) => r.id === aliases[k]) ?? null : null;
-  return roomsByKey.get(k) ?? null;
-}
-
+// "easy" | "medium" | "hard", null for shots not labelled yet ("Unlabeled"),
+// undefined if unreadable.
 function parseDifficulty(s) {
   const d = s.toLowerCase();
+  if (d === "unlabeled") return null;
   // Tolerates typos like "Eeasy".
   if (d.includes("easy")) return "easy";
   if (d.includes("med")) return "medium";
   if (d.includes("hard")) return "hard";
-  return null;
+  return undefined;
+}
+
+// The capture mod's sidecar JSON, or null.
+async function readMeta(jsonUrl) {
+  const text = await readFile(jsonUrl, "utf8").catch(() => null);
+  return text && JSON.parse(text);
+}
+
+// Where the shot was taken, from the sidecar JSON, or undefined.
+function poseOf(meta) {
+  if (!meta) return undefined;
+  const { min, max } = meta.roomBounds;
+  return {
+    block: meta.blockInRoom,
+    roomSize: max.map((v, i) => v - min[i] + 1),
+    yaw: meta.camera.yaw,
+    pitch: meta.camera.pitch,
+    fov: meta.camera.fov,
+  };
 }
 
 await mkdir(OUT, { recursive: true });
-const files = (await readdir(SRC)).filter((f) => /\.(png|jpe?g|webp)$/i.test(f)).sort();
+// Paths relative to SRC, with "/" separators.
+const files = (await readdir(SRC, { recursive: true }))
+  .map((f) => f.replaceAll("\\", "/"))
+  .filter((f) => /\.(png|jpe?g|webp)$/i.test(f))
+  .sort();
 const shots = [];
 const produced = new Set();
 let converted = 0;
 
 for (const file of files) {
-  const base = file.replace(/\.[^.]+$/, "");
+  const rel = file.replace(/\.[^.]+$/, "");
+  const base = rel.split("/").pop();
   const match = base.match(/^(.+?)-(\d+)-([A-Za-z]+)$/);
   if (!match) {
     console.warn(`SKIP ${file}: name is not RoomName-Number-Difficulty`);
     continue;
   }
   const [, roomName, , diff] = match;
-  const k = key(roomName);
-  const room = findRoom(roomName);
+  const meta = await readMeta(new URL(`${rel}.json`, SRC));
+  const room = roomLookup.find(roomName, meta?.secrets);
   if (!room) {
     console.warn(
-      k in aliases
+      roomLookup.isAliasedToNull(roomName, meta?.secrets)
         ? `SKIP ${file}: "${roomName}" is set to null in room-aliases.json`
         : `SKIP ${file}: no room named "${roomName}" (add it to scripts/room-aliases.json)`,
     );
     continue;
   }
-  const difficulty = parseDifficulty(diff);
-  if (!difficulty) console.warn(`WARN ${file}: unknown difficulty "${diff}"`);
+  let difficulty = parseDifficulty(diff);
+  if (difficulty === undefined) {
+    console.warn(`WARN ${file}: unknown difficulty "${diff}"`);
+    difficulty = null;
+  }
 
   // Neutral, stable name so players can't read the answer from the file name.
-  const id = createHash("sha256").update(base.toLowerCase()).digest("hex").slice(0, 12);
+  // Top-level files hash just their name (keeps existing URLs); files in
+  // subfolders hash their path, so the same name in two folders can't collide.
+  const id = createHash("sha256").update(rel.toLowerCase()).digest("hex").slice(0, 12);
   const outName = `${id}.webp`;
   const outFile = new URL(outName, OUT);
+  if (produced.has(outName)) {
+    console.warn(`SKIP ${file}: same name as another screenshot`);
+    continue;
+  }
   produced.add(outName);
 
   const srcStat = await stat(new URL(file, SRC));
@@ -84,7 +115,8 @@ for (const file of files) {
       .toFile(fileURLToPath(outFile));
     converted++;
   }
-  shots.push({ id, image: `screenshots/${outName}`, roomId: room.id, difficulty });
+  const pose = poseOf(meta);
+  shots.push({ id, image: `screenshots/${outName}`, roomId: room.id, difficulty, ...(pose && { pose }) });
 }
 
 // Remove images whose source no longer exists.

@@ -1,0 +1,49 @@
+{
+  "world": "Lava-Ravine-6",
+  "room": "LavaRavine",
+  "secrets": 6,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 46.32,
+    "y": 70.62,
+    "z": 42.45,
+    "yaw": -35.901,
+    "pitch": 5.036,
+    "fov": 100
+  },
+  "block": [
+    46,
+    69,
+    42
+  ],
+  "blockInRoom": [
+    54,
+    53,
+    50
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      16,
+      -8
+    ],
+    "max": [
+      55,
+      99,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 4.659,
+    "variety": 10,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:53:01.548420Z",
+  "difficultyGuess": "Hard"
+}

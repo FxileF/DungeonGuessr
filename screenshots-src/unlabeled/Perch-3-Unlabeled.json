@@ -1,0 +1,49 @@
+{
+  "world": "Perch-2",
+  "room": "Perch",
+  "secrets": 2,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 20.355,
+    "y": 61.62,
+    "z": -0.703,
+    "yaw": 75.957,
+    "pitch": 10.42,
+    "fov": 100
+  },
+  "block": [
+    20,
+    60,
+    -1
+  ],
+  "blockInRoom": [
+    28,
+    5,
+    7
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      55,
+      -8
+    ],
+    "max": [
+      22,
+      107,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 4.012,
+    "variety": 9,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:54:57.667822300Z",
+  "difficultyGuess": "Hard"
+}

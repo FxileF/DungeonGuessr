@@ -1,0 +1,49 @@
+{
+  "world": "Withermancers-4",
+  "room": "Withermancers",
+  "secrets": 4,
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 23.204,
+    "y": 72.62,
+    "z": 17.264,
+    "yaw": -85.107,
+    "pitch": 9.853,
+    "fov": 100
+  },
+  "block": [
+    23,
+    71,
+    17
+  ],
+  "blockInRoom": [
+    31,
+    25,
+    25
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      46,
+      -8
+    ],
+    "max": [
+      54,
+      129,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 4.893,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:58:51.468025300Z",
+  "difficultyGuess": "Hard"
+}

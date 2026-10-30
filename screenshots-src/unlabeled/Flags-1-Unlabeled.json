@@ -1,0 +1,49 @@
+{
+  "world": "Flags-7",
+  "room": "Flags",
+  "secrets": 7,
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 27.572,
+    "y": 98.62,
+    "z": 41.516,
+    "yaw": -81.81,
+    "pitch": -8.804,
+    "fov": 100
+  },
+  "block": [
+    27,
+    97,
+    41
+  ],
+  "blockInRoom": [
+    35,
+    36,
+    49
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      61,
+      -8
+    ],
+    "max": [
+      55,
+      119,
+      54
+    ]
+  },
+  "view": {
+    "medianDistance": 5.979,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:51:46.003981700Z",
+  "difficultyGuess": "Medium"
+}

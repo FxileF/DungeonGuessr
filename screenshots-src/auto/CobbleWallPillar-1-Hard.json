@@ -1,0 +1,49 @@
+{
+  "world": "Cobble-Wall-Pillar-2",
+  "room": "CobbleWallPillar",
+  "secrets": 2,
+  "shot": 1,
+  "difficulty": "Hard",
+  "camera": {
+    "x": 5.79,
+    "y": 61.62,
+    "z": 4.335,
+    "yaw": -26.22,
+    "pitch": -10.238,
+    "fov": 100
+  },
+  "block": [
+    5,
+    60,
+    4
+  ],
+  "blockInRoom": [
+    13,
+    11,
+    12
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      49,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.302,
+    "variety": 8,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:50:09.548654400Z",
+  "difficultyGuess": "Hard"
+}

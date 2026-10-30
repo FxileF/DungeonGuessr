@@ -1,0 +1,49 @@
+{
+  "world": "Blue-Skulls-1",
+  "room": "BlueSkulls",
+  "secrets": 1,
+  "shot": 4,
+  "difficulty": "Medium",
+  "camera": {
+    "x": -2.798,
+    "y": 71.62,
+    "z": -5.623,
+    "yaw": -73.594,
+    "pitch": -8.258,
+    "fov": 100
+  },
+  "block": [
+    -3,
+    70,
+    -6
+  ],
+  "blockInRoom": [
+    5,
+    4,
+    2
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 4.342,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:49:07.348199700Z",
+  "difficultyGuess": "Hard"
+}

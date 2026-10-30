@@ -1,0 +1,49 @@
+{
+  "world": "Duncan-1",
+  "room": "Duncan",
+  "secrets": 1,
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": -2.231,
+    "y": 85.62,
+    "z": 0.583,
+    "yaw": 12.503,
+    "pitch": 20.863,
+    "fov": 100
+  },
+  "block": [
+    -3,
+    84,
+    0
+  ],
+  "blockInRoom": [
+    5,
+    18,
+    8
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.55,
+    "variety": 13,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:51:34.730698300Z",
+  "difficultyGuess": "Hard"
+}

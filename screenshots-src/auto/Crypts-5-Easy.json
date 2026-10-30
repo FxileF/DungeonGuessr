@@ -1,0 +1,49 @@
+{
+  "world": "Crypts-1",
+  "room": "Crypts",
+  "secrets": 1,
+  "shot": 5,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 14.507,
+    "y": 75.62,
+    "z": 10.57,
+    "yaw": -1.491,
+    "pitch": 3.956,
+    "fov": 100
+  },
+  "block": [
+    14,
+    74,
+    10
+  ],
+  "blockInRoom": [
+    22,
+    18,
+    18
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      22,
+      108,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.176,
+    "variety": 13,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:50:27.658839200Z",
+  "difficultyGuess": "Hard"
+}

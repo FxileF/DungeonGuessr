@@ -1,0 +1,49 @@
+{
+  "world": "Water-2",
+  "room": "Water",
+  "secrets": 2,
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 4.389,
+    "y": 70.62,
+    "z": 16.325,
+    "yaw": -99.894,
+    "pitch": 22.745,
+    "fov": 100
+  },
+  "block": [
+    4,
+    69,
+    16
+  ],
+  "blockInRoom": [
+    12,
+    18,
+    24
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      51,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 7.337,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:58:24.915139Z",
+  "difficultyGuess": "Medium"
+}

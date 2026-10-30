@@ -1,0 +1,49 @@
+{
+  "world": "Sewer-7",
+  "room": "Sewer",
+  "secrets": 7,
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 109.36,
+    "y": 46.62,
+    "z": 9.66,
+    "yaw": -15.691,
+    "pitch": -5.274,
+    "fov": 100
+  },
+  "block": [
+    109,
+    45,
+    9
+  ],
+  "blockInRoom": [
+    117,
+    17,
+    17
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      28,
+      -8
+    ],
+    "max": [
+      119,
+      107,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.882,
+    "variety": 12,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:56:33.140152100Z",
+  "difficultyGuess": "Medium"
+}

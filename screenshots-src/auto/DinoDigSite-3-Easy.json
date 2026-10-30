@@ -1,0 +1,49 @@
+{
+  "world": "Dino-Dig-Site-4",
+  "room": "DinoDigSite",
+  "secrets": 4,
+  "shot": 3,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 8.319,
+    "y": 64.62,
+    "z": 7.366,
+    "yaw": -86.587,
+    "pitch": 10.921,
+    "fov": 100
+  },
+  "block": [
+    8,
+    63,
+    7
+  ],
+  "blockInRoom": [
+    16,
+    27,
+    15
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      36,
+      -8
+    ],
+    "max": [
+      54,
+      117,
+      54
+    ]
+  },
+  "view": {
+    "medianDistance": 8.383,
+    "variety": 20,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:50:42.711164700Z",
+  "difficultyGuess": "Medium"
+}

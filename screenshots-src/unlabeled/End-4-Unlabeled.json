@@ -1,0 +1,49 @@
+{
+  "world": "End-2",
+  "room": "End",
+  "secrets": 2,
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 6.431,
+    "y": 62.62,
+    "z": 5.3,
+    "yaw": 52.856,
+    "pitch": 8.938,
+    "fov": 100
+  },
+  "block": [
+    6,
+    61,
+    5
+  ],
+  "blockInRoom": [
+    14,
+    3,
+    13
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      58,
+      -8
+    ],
+    "max": [
+      22,
+      107,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.109,
+    "variety": 13,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:51:41.714820500Z",
+  "difficultyGuess": "Hard"
+}

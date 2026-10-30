@@ -1,0 +1,49 @@
+{
+  "world": "Redstone-Warrior-3",
+  "room": "RedstoneWarrior",
+  "secrets": 3,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 10.281,
+    "y": 78.62,
+    "z": 50.523,
+    "yaw": 155.263,
+    "pitch": 27.066,
+    "fov": 100
+  },
+  "block": [
+    10,
+    77,
+    50
+  ],
+  "blockInRoom": [
+    18,
+    23,
+    58
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      54,
+      -8
+    ],
+    "max": [
+      23,
+      114,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 7.325,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:56:12.659694700Z",
+  "difficultyGuess": "Medium"
+}

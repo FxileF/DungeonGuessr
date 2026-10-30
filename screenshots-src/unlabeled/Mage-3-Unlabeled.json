@@ -1,0 +1,49 @@
+{
+  "world": "Mage-4",
+  "room": "Mage",
+  "secrets": 4,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 40.599,
+    "y": 76.62,
+    "z": 6.767,
+    "yaw": -42.733,
+    "pitch": -12.962,
+    "fov": 100
+  },
+  "block": [
+    40,
+    75,
+    6
+  ],
+  "blockInRoom": [
+    48,
+    16,
+    14
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      59,
+      -8
+    ],
+    "max": [
+      54,
+      109,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 6.244,
+    "variety": 6,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:53:43.846380300Z",
+  "difficultyGuess": "Medium"
+}

@@ -1,0 +1,49 @@
+{
+  "world": "Doors-5",
+  "room": "Doors",
+  "secrets": 5,
+  "shot": 2,
+  "difficulty": "Easy",
+  "camera": {
+    "x": -1.678,
+    "y": 72.62,
+    "z": 49.524,
+    "yaw": -148.386,
+    "pitch": -2.705,
+    "fov": 100
+  },
+  "block": [
+    -2,
+    71,
+    49
+  ],
+  "blockInRoom": [
+    6,
+    25,
+    57
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      46,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      54
+    ]
+  },
+  "view": {
+    "medianDistance": 5.591,
+    "variety": 22,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:50:57.995220400Z",
+  "difficultyGuess": "Medium"
+}

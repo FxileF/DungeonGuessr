@@ -1,0 +1,48 @@
+{
+  "world": "Tomioka",
+  "room": "Tomioka",
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 6.588,
+    "y": 70.62,
+    "z": 8.611,
+    "yaw": -43.785,
+    "pitch": 17.891,
+    "fov": 100
+  },
+  "block": [
+    6,
+    69,
+    8
+  ],
+  "blockInRoom": [
+    14,
+    3,
+    16
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.275,
+    "variety": 13,
+    "escapeFraction": 0.024
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:58:04.484063600Z",
+  "difficultyGuess": "Hard"
+}

@@ -1,0 +1,49 @@
+{
+  "world": "Golden-Oasis-1",
+  "room": "GoldenOasis",
+  "secrets": 1,
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 7.717,
+    "y": 70.62,
+    "z": 8.44,
+    "yaw": 152.157,
+    "pitch": -11.657,
+    "fov": 100
+  },
+  "block": [
+    7,
+    69,
+    8
+  ],
+  "blockInRoom": [
+    15,
+    13,
+    16
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.876,
+    "variety": 13,
+    "escapeFraction": 0.012
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:51:56.693692100Z",
+  "difficultyGuess": "Medium"
+}

@@ -1,0 +1,49 @@
+{
+  "world": "Small-Stairs-2",
+  "room": "SmallStairs",
+  "secrets": 2,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": -5.469,
+    "y": 68.62,
+    "z": 10.558,
+    "yaw": -119.109,
+    "pitch": 2.317,
+    "fov": 100
+  },
+  "block": [
+    -6,
+    67,
+    10
+  ],
+  "blockInRoom": [
+    2,
+    8,
+    18
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      59,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 12.766,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:57:09.654163300Z",
+  "difficultyGuess": "Easy"
+}

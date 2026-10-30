@@ -1,0 +1,49 @@
+{
+  "world": "Cages-2",
+  "room": "Cages",
+  "secrets": 2,
+  "shot": 1,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 8.715,
+    "y": 70.62,
+    "z": 20.489,
+    "yaw": -170.694,
+    "pitch": 8.382,
+    "fov": 100
+  },
+  "block": [
+    8,
+    69,
+    20
+  ],
+  "blockInRoom": [
+    16,
+    23,
+    28
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      46,
+      -8
+    ],
+    "max": [
+      22,
+      109,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.787,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:49:32.342243800Z",
+  "difficultyGuess": "Hard"
+}

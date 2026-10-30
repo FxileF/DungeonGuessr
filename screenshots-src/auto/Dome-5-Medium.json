@@ -1,0 +1,49 @@
+{
+  "world": "Dome-2",
+  "room": "Dome",
+  "secrets": 2,
+  "shot": 5,
+  "difficulty": "Medium",
+  "camera": {
+    "x": 5.358,
+    "y": 70.62,
+    "z": -0.256,
+    "yaw": -105.474,
+    "pitch": -12.581,
+    "fov": 100
+  },
+  "block": [
+    5,
+    69,
+    -1
+  ],
+  "blockInRoom": [
+    13,
+    13,
+    7
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      23,
+      107,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 7.837,
+    "variety": 19,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:50:54.422902400Z",
+  "difficultyGuess": "Medium"
+}

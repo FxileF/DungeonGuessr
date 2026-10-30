@@ -1,0 +1,48 @@
+{
+  "world": "Ice-Silverfish-Room",
+  "room": "IceSilverfishRoom",
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 9.323,
+    "y": 73.62,
+    "z": 7.69,
+    "yaw": 144.926,
+    "pitch": 9.905,
+    "fov": 100
+  },
+  "block": [
+    9,
+    72,
+    7
+  ],
+  "blockInRoom": [
+    17,
+    17,
+    15
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      55,
+      -8
+    ],
+    "max": [
+      23,
+      90,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 4.745,
+    "variety": 13,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:52:41.607138100Z",
+  "difficultyGuess": "Hard"
+}

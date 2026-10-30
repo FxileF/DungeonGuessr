@@ -1,0 +1,49 @@
+{
+  "world": "Quartz-Knight-7",
+  "room": "QuartzKnight",
+  "secrets": 7,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 90.262,
+    "y": 65.62,
+    "z": 11.418,
+    "yaw": -75.84,
+    "pitch": 2.095,
+    "fov": 100
+  },
+  "block": [
+    90,
+    64,
+    11
+  ],
+  "blockInRoom": [
+    98,
+    23,
+    19
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      41,
+      -8
+    ],
+    "max": [
+      118,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.137,
+    "variety": 16,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:55:30.736705300Z",
+  "difficultyGuess": "Hard"
+}

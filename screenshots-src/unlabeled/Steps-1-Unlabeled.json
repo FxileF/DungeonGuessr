@@ -1,0 +1,49 @@
+{
+  "world": "Steps-1",
+  "room": "Steps",
+  "secrets": 1,
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 10.742,
+    "y": 70.62,
+    "z": 12.399,
+    "yaw": 64.418,
+    "pitch": -14.66,
+    "fov": 100
+  },
+  "block": [
+    10,
+    69,
+    12
+  ],
+  "blockInRoom": [
+    18,
+    3,
+    20
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      100,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 7.564,
+    "variety": 15,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:57:29.969608800Z",
+  "difficultyGuess": "Medium"
+}

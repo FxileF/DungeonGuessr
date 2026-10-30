@@ -1,0 +1,48 @@
+{
+  "world": "Dragon",
+  "room": "Dragon",
+  "shot": 3,
+  "difficulty": "Medium",
+  "camera": {
+    "x": 4.299,
+    "y": 65.62,
+    "z": 3.365,
+    "yaw": 12.559,
+    "pitch": 28.186,
+    "fov": 100
+  },
+  "block": [
+    4,
+    64,
+    3
+  ],
+  "blockInRoom": [
+    12,
+    6,
+    11
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      58,
+      -8
+    ],
+    "max": [
+      22,
+      100,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 4.234,
+    "variety": 15,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:51:14.652813400Z",
+  "difficultyGuess": "Hard"
+}

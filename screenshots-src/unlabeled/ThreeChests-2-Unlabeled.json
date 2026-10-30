@@ -1,0 +1,48 @@
+{
+  "world": "Three-Chests",
+  "room": "ThreeChests",
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 20.702,
+    "y": 70.62,
+    "z": 5.469,
+    "yaw": 40.8,
+    "pitch": -9.198,
+    "fov": 100
+  },
+  "block": [
+    20,
+    69,
+    5
+  ],
+  "blockInRoom": [
+    28,
+    4,
+    13
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      65,
+      -8
+    ],
+    "max": [
+      23,
+      100,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 5.034,
+    "variety": 13,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:57:51.775070600Z",
+  "difficultyGuess": "Hard"
+}

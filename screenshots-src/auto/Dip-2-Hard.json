@@ -1,0 +1,49 @@
+{
+  "world": "Dip-2",
+  "room": "Dip",
+  "secrets": 2,
+  "shot": 2,
+  "difficulty": "Hard",
+  "camera": {
+    "x": 10.531,
+    "y": 82.62,
+    "z": 0.619,
+    "yaw": 171.539,
+    "pitch": -9.785,
+    "fov": 100
+  },
+  "block": [
+    10,
+    81,
+    0
+  ],
+  "blockInRoom": [
+    18,
+    15,
+    8
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.911,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:50:47.302048500Z",
+  "difficultyGuess": "Hard"
+}

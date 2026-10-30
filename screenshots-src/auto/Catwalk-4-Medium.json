@@ -1,0 +1,49 @@
+{
+  "world": "Catwalk-6",
+  "room": "Catwalk",
+  "secrets": 6,
+  "shot": 4,
+  "difficulty": "Medium",
+  "camera": {
+    "x": 12.226,
+    "y": 90.62,
+    "z": 32.757,
+    "yaw": 159.602,
+    "pitch": 9.073,
+    "fov": 100
+  },
+  "block": [
+    12,
+    89,
+    32
+  ],
+  "blockInRoom": [
+    20,
+    53,
+    40
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      36,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      87
+    ]
+  },
+  "view": {
+    "medianDistance": 11.474,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:49:50.309712700Z",
+  "difficultyGuess": "Easy"
+}

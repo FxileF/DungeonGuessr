@@ -1,0 +1,49 @@
+{
+  "world": "Slime-5",
+  "room": "Slime",
+  "secrets": 5,
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 12.471,
+    "y": 54.62,
+    "z": 50.249,
+    "yaw": 83.024,
+    "pitch": 3.696,
+    "fov": 100
+  },
+  "block": [
+    12,
+    53,
+    50
+  ],
+  "blockInRoom": [
+    20,
+    12,
+    58
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      41,
+      -8
+    ],
+    "max": [
+      23,
+      108,
+      86
+    ]
+  },
+  "view": {
+    "medianDistance": 13.959,
+    "variety": 8,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:56:58.412545Z",
+  "difficultyGuess": "Easy"
+}

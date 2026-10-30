@@ -1,0 +1,49 @@
+{
+  "world": "Prison-Cell-1",
+  "room": "PrisonCell",
+  "secrets": 1,
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 4.334,
+    "y": 70.62,
+    "z": 8.623,
+    "yaw": -112.382,
+    "pitch": 1.143,
+    "fov": 100
+  },
+  "block": [
+    4,
+    69,
+    8
+  ],
+  "blockInRoom": [
+    12,
+    3,
+    16
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 5.454,
+    "variety": 13,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:55:13.035999500Z",
+  "difficultyGuess": "Hard"
+}

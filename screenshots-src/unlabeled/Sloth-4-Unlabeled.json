@@ -1,0 +1,49 @@
+{
+  "world": "Sloth-1",
+  "room": "Sloth",
+  "secrets": 1,
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 7.423,
+    "y": 70.62,
+    "z": 4.69,
+    "yaw": 152.584,
+    "pitch": 0.068,
+    "fov": 100
+  },
+  "block": [
+    7,
+    69,
+    4
+  ],
+  "blockInRoom": [
+    15,
+    3,
+    12
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.104,
+    "variety": 13,
+    "escapeFraction": 0.012
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:57:04.754767300Z",
+  "difficultyGuess": "Hard"
+}

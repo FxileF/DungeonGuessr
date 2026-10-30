@@ -1,0 +1,49 @@
+{
+  "world": "Dueces-3",
+  "room": "Dueces",
+  "secrets": 3,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 11.667,
+    "y": 81.62,
+    "z": 12.73,
+    "yaw": -75.272,
+    "pitch": 13.775,
+    "fov": 100
+  },
+  "block": [
+    11,
+    80,
+    12
+  ],
+  "blockInRoom": [
+    19,
+    31,
+    20
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      49,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 8.098,
+    "variety": 17,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:51:31.802549200Z",
+  "difficultyGuess": "Medium"
+}

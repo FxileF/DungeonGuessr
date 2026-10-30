@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capture Review</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #171a21;
+    --panel-2: #1e222b;
+    --line: #2a2f3a;
+    --text: #e6e8ee;
+    --muted: #8b93a5;
+    --accent: #f2cf3c;
+    --easy: #4cc22f;
+    --medium: #f2a93c;
+    --hard: #f0322f;
+    --warn: #ffb627;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font: 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+  button, select { font: inherit; color: inherit; }
+  header {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+    padding: 10px 16px; border-bottom: 1px solid var(--line); background: var(--panel);
+  }
+  h1 { font-size: 16px; margin: 0 8px 0 0; letter-spacing: .02em; }
+  h1 span { color: var(--accent); }
+  .tabs { display: flex; gap: 4px; }
+  .tab, .btn {
+    background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px;
+    padding: 5px 10px; cursor: pointer;
+  }
+  .tab[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+  .tab b { color: var(--muted); font-weight: 500; margin-left: 4px; }
+  select { background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; }
+  label.check { display: flex; align-items: center; gap: 6px; color: var(--muted); }
+  .spacer { flex: 1; }
+  .btn:hover, .tab:hover { border-color: var(--muted); }
+  .btn.primary { background: var(--accent); color: #111; border-color: var(--accent); font-weight: 600; }
+
+  main { display: grid; grid-template-columns: 260px 1fr 340px; min-height: 0; }
+  #list {
+    overflow-y: auto; border-right: 1px solid var(--line); padding: 8px;
+    display: grid; grid-auto-rows: max-content; gap: 8px; align-content: start;
+  }
+  .item {
+    position: relative; aspect-ratio: 16 / 9; border: 2px solid transparent; border-radius: 6px; overflow: hidden;
+    cursor: pointer; background: var(--panel-2);
+  }
+  .item img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .item.sel { border-color: var(--accent); }
+  .item .cap {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 3px 6px; font-size: 12px;
+    background: linear-gradient(transparent, rgba(0,0,0,.8)); display: flex; justify-content: space-between;
+  }
+  .item .warn { position: absolute; top: 4px; right: 6px; color: var(--warn); font-weight: 700; }
+
+  #view { display: grid; grid-template-rows: 1fr auto; min-height: 0; min-width: 0; }
+  #shot { min-height: 0; display: grid; place-items: center; padding: 12px; }
+  #shot img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; }
+  .empty { color: var(--muted); }
+  .actions {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center;
+    padding: 10px; border-top: 1px solid var(--line); background: var(--panel);
+  }
+  .diff { min-width: 90px; }
+  .diff[aria-pressed="true"][data-d="Easy"] { background: var(--easy); color: #111; border-color: var(--easy); }
+  .diff[aria-pressed="true"][data-d="Medium"] { background: var(--medium); color: #111; border-color: var(--medium); }
+  .diff[aria-pressed="true"][data-d="Hard"] { background: var(--hard); color: #fff; border-color: var(--hard); }
+  .diff .g { font-size: 11px; opacity: .75; margin-left: 4px; }
+  kbd { font: 11px ui-monospace, monospace; color: var(--muted); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; margin-left: 4px; }
+
+  #info { overflow-y: auto; border-left: 1px solid var(--line); padding: 12px 16px; background: var(--panel); }
+  #info h2 { font-size: 18px; margin: 0 0 2px; }
+  #info h3 { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 18px 0 6px; }
+  dl { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; margin: 0; }
+  dt { color: var(--muted); }
+  dd { margin: 0; font-variant-numeric: tabular-nums; word-break: break-word; }
+  .issues { margin: 10px 0 0; padding: 8px 10px; border: 1px solid var(--warn); border-radius: 6px; color: var(--warn); }
+  .issues div + div { margin-top: 4px; }
+  .sub { color: var(--muted); }
+  #toast {
+    position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); max-width: 80vw;
+    background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px;
+    white-space: pre-wrap; font: 12px ui-monospace, monospace; display: none;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Capture <span>Review</span></h1>
+  <div class="tabs" id="tabs"></div>
+  <select id="room"><option value="">All rooms</option></select>
+  <select id="difficulty">
+    <option value="">All difficulties</option>
+    <option>Easy</option><option>Medium</option><option>Hard</option><option>Unlabeled</option>
+  </select>
+  <label class="check"><input type="checkbox" id="issuesOnly"> Issues only</label>
+  <span class="spacer"></span>
+  <button class="btn" id="reload" title="Re-read the folders (after a new capture run)">Refresh</button>
+  <button class="btn" id="publishUnlabeled" title="Move every pending shot without a ⚠ to Unlabeled, then import">Publish all pending as unlabeled</button>
+  <button class="btn primary" id="import" title="npm run import-screenshots: publish accepted and unlabeled shots to the site's data">Import to site</button>
+</header>
+<main>
+  <div id="list"></div>
+  <section id="view">
+    <div id="shot"><p class="empty">Loading…</p></div>
+    <div class="actions" id="actions"></div>
+  </section>
+  <aside id="info"></aside>
+</main>
+<div id="toast"></div>
+
+<script>
+const STATUSES = [
+  { id: "pending", label: "Pending" },
+  { id: "accepted", label: "Accepted" },
+  { id: "unlabeled", label: "Unlabeled" },
+  { id: "rejected", label: "Rejected" },
+];
+// Keyboard shortcut and button text for moving a shot to each folder.
+const MOVES = {
+  pending: { key: "P", label: "Back to pending" },
+  accepted: { key: "A", label: "Accept" },
+  unlabeled: { key: "U", label: "Publish unlabeled" },
+  rejected: { key: "R", label: "Reject" },
+};
+const DIFFICULTIES = ["Easy", "Medium", "Hard"];
+
+let shots = [];
+let tab = "pending";
+let selected = 0;
+let captures = "";
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const fmt = (n, d = 2) => (typeof n === "number" ? n.toFixed(d).replace(/\.?0+$/, "") : "–");
+const xyz = (a) => (Array.isArray(a) ? a.join(", ") : "–");
+
+// Minecraft yaw: 0 = south, 90 = west, ±180 = north, -90 = east.
+function compass(yaw) {
+  const dirs = ["S", "SW", "W", "NW", "N", "NE", "E", "SE"];
+  return dirs[Math.round((((yaw % 360) + 360) % 360) / 45) % 8];
+}
+
+function visible() {
+  const room = $("room").value, diff = $("difficulty").value, issuesOnly = $("issuesOnly").checked;
+  return shots
+    .filter((s) => s.status === tab)
+    .filter((s) => !room || s.roomName === room)
+    .filter((s) => !diff || s.difficulty === diff)
+    .filter((s) => !issuesOnly || s.issues.length)
+    .sort((a, b) => a.roomName.localeCompare(b.roomName) || a.number - b.number);
+}
+
+function renderTabs() {
+  $("tabs").innerHTML = STATUSES.map((t) =>
+    `<button class="tab" data-tab="${t.id}" aria-pressed="${t.id === tab}">${t.label}<b>${shots.filter((s) => s.status === t.id).length}</b></button>`
+  ).join("");
+}
+
+function renderRoomFilter() {
+  const current = $("room").value;
+  const names = [...new Set(shots.map((s) => s.roomName))].sort();
+  $("room").innerHTML = `<option value="">All rooms</option>` +
+    names.map((n) => `<option ${n === current ? "selected" : ""}>${esc(n)}</option>`).join("");
+}
+
+function renderList() {
+  const list = visible();
+  selected = Math.min(selected, Math.max(0, list.length - 1));
+  $("list").innerHTML = list.map((s, i) => `
+    <div class="item ${i === selected ? "sel" : ""}" data-i="${i}" title="${esc(s.base)}">
+      <img loading="lazy" src="/thumb/${s.status}/${encodeURIComponent(s.base)}" alt="">
+      ${s.issues.length ? `<span class="warn" title="${esc(s.issues.join("\n"))}">!</span>` : ""}
+      <div class="cap"><span>${esc(s.roomName)} #${s.number}</span><span>${s.difficulty}</span></div>
+    </div>`).join("") || `<p class="empty">Nothing here.</p>`;
+  $("list").querySelector(".sel")?.scrollIntoView({ block: "nearest" });
+  renderShot(list[selected]);
+}
+
+function renderShot(s) {
+  if (!s) {
+    $("shot").innerHTML = `<p class="empty">No shots in this view.<br><span class="sub">Captures folder: ${esc(captures)}</span></p>`;
+    $("actions").innerHTML = "";
+    $("info").innerHTML = "";
+    return;
+  }
+  $("shot").innerHTML = `<img src="/img/${s.status}/${encodeURIComponent(s.base)}" alt="${esc(s.base)}">`;
+
+  const moves = STATUSES.filter((t) => t.id !== s.status).map((t) =>
+    `<button class="btn ${t.id === "accepted" ? "primary" : ""}" data-move="${t.id}">${MOVES[t.id].label}<kbd>${MOVES[t.id].key}</kbd></button>`);
+  $("actions").innerHTML =
+    DIFFICULTIES.map((d, i) => `<button class="btn diff" data-d="${d}" aria-pressed="${d === s.difficulty}">${d}${d === s.guess ? `<span class="g">(guess)</span>` : ""}<kbd>${i + 1}</kbd></button>`).join("") +
+    `<span style="width:16px"></span>` + moves.join("") +
+    `<span class="sub" style="margin-left:12px">${s.status === "unlabeled" ? "1/2/3 labels it (→ Accepted) · " : ""}← → to browse</span>`;
+
+  const m = s.meta ?? {}, cam = m.camera ?? {}, view = m.view ?? {}, b = m.roomBounds;
+  const size = b ? b.max.map((v, i) => v - b.min[i] + 1).join(" × ") : "–";
+  $("info").innerHTML = `
+    <h2>${esc(s.room?.name ?? s.roomName)}</h2>
+    <div class="sub">${esc(s.base)} · ${s.status}</div>
+    ${s.issues.length ? `<div class="issues">${s.issues.map((i) => `<div>⚠ ${esc(i)}</div>`).join("")}</div>` : ""}
+
+    <h3>Answer</h3>
+    <dl>
+      <dt>Shape</dt><dd>${esc(s.room?.shape ?? "–")}</dd>
+      <dt>Secrets</dt><dd>${s.room?.secrets ?? "–"} <span class="sub">(server file: ${m.secrets ?? "–"})</span></dd>
+      <dt>Type</dt><dd>${esc(s.room?.type ?? "–")}</dd>
+      <dt>World</dt><dd>${esc(m.world ?? "–")}</dd>
+    </dl>
+
+    <h3>Difficulty</h3>
+    <dl>
+      <dt>Label</dt><dd>${s.difficulty}</dd>
+      <dt>Mod's guess</dt><dd>${esc(s.guess)}</dd>
+      <dt>View distance</dt><dd>${fmt(view.medianDistance, 1)} blocks <span class="sub">(median)</span></dd>
+      <dt>Block types</dt><dd>${view.variety ?? "–"} <span class="sub">visible</span></dd>
+      <dt>Leaks out</dt><dd>${view.escapeFraction != null ? Math.round(view.escapeFraction * 100) + "%" : "–"} <span class="sub">of view</span></dd>
+    </dl>
+
+    <h3>Camera</h3>
+    <dl>
+      <dt>Position</dt><dd>${fmt(cam.x)}, ${fmt(cam.y)}, ${fmt(cam.z)}</dd>
+      <dt>Yaw</dt><dd>${fmt(cam.yaw, 1)}° <span class="sub">(${cam.yaw != null ? compass(cam.yaw) : "–"})</span></dd>
+      <dt>Pitch</dt><dd>${fmt(cam.pitch, 1)}° <span class="sub">(${cam.pitch < 0 ? "up" : "down"})</span></dd>
+      <dt>FOV</dt><dd>${cam.fov ?? "–"}</dd>
+    </dl>
+
+    <h3>Position in room</h3>
+    <dl>
+      <dt>Block</dt><dd>${xyz(m.block)}</dd>
+      <dt>In room</dt><dd>${xyz(m.blockInRoom)}</dd>
+      <dt>Room size</dt><dd>${size}</dd>
+      <dt>Bounds</dt><dd>${b ? `${xyz(b.min)} → ${xyz(b.max)}` : "–"}</dd>
+    </dl>
+
+    <h3>File</h3>
+    <dl>
+      <dt>Image</dt><dd>${m.image ? `${m.image.width} × ${m.image.height}` : "–"}</dd>
+      <dt>Minecraft</dt><dd>${esc(m.minecraft ?? "–")}</dd>
+      <dt>Taken</dt><dd>${m.takenAt ? new Date(m.takenAt).toLocaleString() : "–"}</dd>
+    </dl>`;
+}
+
+function render() {
+  renderTabs();
+  renderList();
+}
+
+async function load() {
+  const data = await (await fetch("/api/shots")).json();
+  shots = data.shots;
+  captures = data.captures;
+  renderRoomFilter();
+  render();
+}
+
+async function update(change) {
+  const s = visible()[selected];
+  if (!s) return;
+  const res = await fetch("/api/update", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ status: s.status, base: s.base, ...change }),
+  });
+  const updated = await res.json();
+  if (!res.ok) return toast(updated.error ?? "Failed");
+  shots[shots.indexOf(s)] = updated;
+  // A moved shot leaves this tab, and the next one slides into its place.
+  render();
+}
+
+function toast(text, ms = 4000) {
+  const t = $("toast");
+  t.textContent = text;
+  t.style.display = "block";
+  clearTimeout(toast.timer);
+  toast.timer = setTimeout(() => (t.style.display = "none"), ms);
+}
+
+function go(delta) {
+  const n = visible().length;
+  if (!n) return;
+  selected = (selected + delta + n) % n;
+  renderList();
+}
+
+document.addEventListener("click", (e) => {
+  const el = e.target.closest("[data-tab],[data-i],[data-d],[data-move]");
+  if (!el) return;
+  if (el.dataset.tab) { tab = el.dataset.tab; selected = 0; render(); }
+  else if (el.dataset.i) { selected = Number(el.dataset.i); renderList(); }
+  else if (el.dataset.d) update({ difficulty: el.dataset.d });
+  else if (el.dataset.move) update({ to: el.dataset.move });
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.target.closest("select, input") || e.ctrlKey || e.metaKey || e.altKey) return;
+  const key = e.key.toLowerCase();
+  const s = visible()[selected];
+  if (key === "arrowright" || key === "arrowdown" || key === "j") { e.preventDefault(); go(1); }
+  else if (key === "arrowleft" || key === "arrowup" || key === "k") { e.preventDefault(); go(-1); }
+  else if (["1", "2", "3"].includes(key)) update({ difficulty: DIFFICULTIES[Number(key) - 1] });
+  else {
+    const to = Object.keys(MOVES).find((id) => MOVES[id].key.toLowerCase() === key);
+    if (to && s && s.status !== to) update({ to });
+  }
+});
+
+for (const id of ["room", "difficulty", "issuesOnly"]) $(id).addEventListener("change", () => { selected = 0; renderList(); });
+$("reload").addEventListener("click", load);
+$("publishUnlabeled").addEventListener("click", async () => {
+  const ready = shots.filter((s) => s.status === "pending" && !s.issues.length).length;
+  if (!confirm(`Publish ${ready} pending shots without a difficulty? Shots marked ⚠ stay pending. You can still label them later from the Unlabeled tab.`)) return;
+  toast("Publishing…", 120000);
+  const r = await (await fetch("/api/publish-unlabeled", { method: "POST" })).json();
+  await load();
+  toast(`Published ${r.moved} shots as unlabeled.` +
+    (r.kept.length ? `\nStill pending (⚠): ${r.kept.join(", ")}` : "") +
+    `\n${r.code === 0 ? "Import done." : "Import failed."}\n` + r.output.trim().split("\n").slice(-4).join("\n"), 15000);
+});
+$("import").addEventListener("click", async () => {
+  toast("Importing…", 60000);
+  const { code, output } = await (await fetch("/api/import", { method: "POST" })).json();
+  toast((code === 0 ? "Import done.\n" : "Import failed.\n") + output.trim().split("\n").slice(-8).join("\n"), 10000);
+});
+
+load();
+</script>
+</body>
+</html>

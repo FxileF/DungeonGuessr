@@ -40,6 +40,7 @@ interface Game {
   date: string; // UTC day the game was started (the daily's id)
   difficulty: DifficultyFilter;
   includePuzzles: boolean;
+  includeUnlabeled: boolean;
   results: RoundResult[];
   round: number;
   step: Step;
@@ -83,10 +84,14 @@ const gameScore = (g: Game) => g.results.reduce((s, r) => s + roundTotal(r.point
 const gameMax = (g: Game) => g.results.length * MAX_ROUND;
 const isPuzzle = (s: Screenshot) => data.roomsById.get(s.roomId)!.type === "puzzle";
 
-const pool = (difficulty: DifficultyFilter, includePuzzles: boolean) =>
+// Unlabeled screenshots (no difficulty yet) only show up under "Any".
+const pool = (difficulty: DifficultyFilter, includePuzzles: boolean, includeUnlabeled: boolean) =>
   data.screenshots.filter(
-    (s) => (difficulty === "all" || s.difficulty === difficulty) && (includePuzzles || !isPuzzle(s)),
+    (s) =>
+      (difficulty === "all" ? includeUnlabeled || s.difficulty !== null : s.difficulty === difficulty) &&
+      (includePuzzles || !isPuzzle(s)),
   );
+const unlabeledCount = () => data.screenshots.filter((s) => s.difficulty === null).length;
 
 const toResult = (shot: Screenshot): RoundResult => ({
   shot,
@@ -96,10 +101,10 @@ const toResult = (shot: Screenshot): RoundResult => ({
 
 /* ---------- Game setup & persistence ---------- */
 
-function startClassic(difficulty: DifficultyFilter, includePuzzles: boolean) {
-  const shots = shuffle(pool(difficulty, includePuzzles)).slice(0, ROUNDS_PER_GAME);
+function startClassic(difficulty: DifficultyFilter, includePuzzles: boolean, includeUnlabeled: boolean) {
+  const shots = shuffle(pool(difficulty, includePuzzles, includeUnlabeled)).slice(0, ROUNDS_PER_GAME);
   game = {
-    mode: "classic", date: todayUTC(), difficulty, includePuzzles,
+    mode: "classic", date: todayUTC(), difficulty, includePuzzles, includeUnlabeled,
     results: shots.map(toResult), round: 0, step: "shape",
   };
   render();
@@ -135,7 +140,7 @@ function startDaily() {
   const r = results[round];
   const step: Step = !r ? "reveal" : r.shape === undefined ? "shape" : r.secrets === undefined ? "secrets" : "name";
 
-  game = { mode: "daily", date, difficulty: "all", includePuzzles: true, results, round, step };
+  game = { mode: "daily", date, difficulty: "all", includePuzzles: true, includeUnlabeled: true, results, round, step };
   // Every round was answered but the page closed before "See results".
   if (saved && !saved.done && round >= results.length) recordGame(gameScore(game), gameMax(game));
   saveProgress();
@@ -501,7 +506,7 @@ function renderSummary(g: Game) {
     share.textContent = ok ? "Copied!" : "Copy failed";
     setTimeout(() => (share.textContent = "Share result"), 1500);
   });
-  app.querySelector("#again")?.addEventListener("click", () => startClassic(g.difficulty, g.includePuzzles));
+  app.querySelector("#again")?.addEventListener("click", () => startClassic(g.difficulty, g.includePuzzles, g.includeUnlabeled));
   app.querySelector("#menu")!.addEventListener("click", showMenu);
 }
 
@@ -516,6 +521,8 @@ function renderMenu() {
     ? (prefs.difficulty as DifficultyFilter)
     : "all";
   let includePuzzles = prefs.includePuzzles;
+  let includeUnlabeled = prefs.includeUnlabeled;
+  const unlabeled = unlabeledCount();
 
   const dailyBody = daily?.done
     ? `<p class="result">
@@ -545,6 +552,8 @@ function renderMenu() {
         <p class="muted">${ROUNDS_PER_GAME} random screenshots. Play as often as you like.</p>
         <div class="segmented" role="radiogroup" aria-label="Difficulty"></div>
         <label class="check"><input type="checkbox" id="puzzles" /> Include puzzle rooms</label>
+        ${unlabeled ? `<label class="check" title="Screenshots without a difficulty yet. They only show up with &quot;Any&quot;.">
+          <input type="checkbox" id="unlabeled" /> Include unknown-difficulty screenshots (${unlabeled})</label>` : ""}
         <button id="classic" class="primary">Play</button>
       </div>
       <div class="card stats">
@@ -572,11 +581,13 @@ function renderMenu() {
   const seg = app.querySelector<HTMLElement>(".segmented")!;
   const puzzles = app.querySelector<HTMLInputElement>("#puzzles")!;
   const play = app.querySelector<HTMLButtonElement>("#classic")!;
+  const unlabeledBox = app.querySelector<HTMLInputElement>("#unlabeled");
   puzzles.checked = includePuzzles;
+  if (unlabeledBox) unlabeledBox.checked = includeUnlabeled;
 
-  // Re-drawn when the puzzle toggle changes, since the counts depend on it.
+  // Re-drawn when a checkbox changes, since the counts depend on them.
   const drawSegments = () => {
-    const count = (d: DifficultyFilter) => pool(d, includePuzzles).length;
+    const count = (d: DifficultyFilter) => pool(d, includePuzzles, includeUnlabeled).length;
     if (!count(difficulty)) difficulty = "all";
     seg.innerHTML = filters.map((d) => `
       <button role="radio" data-d="${d}" aria-checked="${d === difficulty}" ${count(d) ? "" : "disabled"}>
@@ -596,10 +607,15 @@ function renderMenu() {
     setPrefs({ includePuzzles });
     drawSegments();
   });
+  unlabeledBox?.addEventListener("change", () => {
+    includeUnlabeled = unlabeledBox.checked;
+    setPrefs({ includeUnlabeled });
+    drawSegments();
+  });
   drawSegments();
 
   app.querySelector("#daily")!.addEventListener("click", startDaily);
-  play.addEventListener("click", () => startClassic(difficulty, includePuzzles));
+  play.addEventListener("click", () => startClassic(difficulty, includePuzzles, includeUnlabeled));
 }
 
 function showMenu() {

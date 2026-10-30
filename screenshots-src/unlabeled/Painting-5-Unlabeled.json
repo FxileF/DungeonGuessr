@@ -1,0 +1,49 @@
+{
+  "world": "Painting-2",
+  "room": "Painting",
+  "secrets": 2,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 6.417,
+    "y": 72.62,
+    "z": -1.379,
+    "yaw": 160.912,
+    "pitch": 20.251,
+    "fov": 100
+  },
+  "block": [
+    6,
+    71,
+    -2
+  ],
+  "blockInRoom": [
+    14,
+    5,
+    6
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 5.091,
+    "variety": 13,
+    "escapeFraction": 0.036
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:54:48.222604700Z",
+  "difficultyGuess": "Hard"
+}

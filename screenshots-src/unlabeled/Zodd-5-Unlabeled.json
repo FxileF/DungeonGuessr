@@ -1,0 +1,49 @@
+{
+  "world": "Zodd-1",
+  "room": "Zodd",
+  "secrets": 1,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 15.566,
+    "y": 68.62,
+    "z": 1.534,
+    "yaw": -29.163,
+    "pitch": 20.587,
+    "fov": 100
+  },
+  "block": [
+    15,
+    67,
+    1
+  ],
+  "blockInRoom": [
+    23,
+    6,
+    9
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      61,
+      -8
+    ],
+    "max": [
+      22,
+      107,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.477,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:59:03.391096900Z",
+  "difficultyGuess": "Hard"
+}

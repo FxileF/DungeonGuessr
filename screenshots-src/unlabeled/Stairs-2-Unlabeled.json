@@ -1,0 +1,49 @@
+{
+  "world": "Stairs-4",
+  "room": "Stairs",
+  "secrets": 4,
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 47.466,
+    "y": 72.62,
+    "z": 1.52,
+    "yaw": 14.84,
+    "pitch": -0.541,
+    "fov": 100
+  },
+  "block": [
+    47,
+    71,
+    1
+  ],
+  "blockInRoom": [
+    55,
+    5,
+    9
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      54,
+      99,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 8.341,
+    "variety": 19,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:57:25.259183200Z",
+  "difficultyGuess": "Medium"
+}

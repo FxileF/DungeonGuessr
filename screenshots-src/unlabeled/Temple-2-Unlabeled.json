@@ -1,0 +1,49 @@
+{
+  "world": "Temple-3",
+  "room": "Temple",
+  "secrets": 3,
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 18.381,
+    "y": 79.62,
+    "z": 19.479,
+    "yaw": 132.974,
+    "pitch": -14.033,
+    "fov": 100
+  },
+  "block": [
+    18,
+    78,
+    19
+  ],
+  "blockInRoom": [
+    26,
+    32,
+    27
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      46,
+      -8
+    ],
+    "max": [
+      23,
+      108,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 4.991,
+    "variety": 10,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:57:46.560047900Z",
+  "difficultyGuess": "Hard"
+}

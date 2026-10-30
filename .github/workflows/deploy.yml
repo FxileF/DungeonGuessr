@@ -1,4 +1,5 @@
 # Builds the site and publishes it to GitHub Pages on every push to main.
+# Pushes that only touch the capture mod don't redeploy.
 # Can also be started by hand from the Actions tab.
 # One-time setup: repo Settings → Pages → Source: "GitHub Actions".
 name: Deploy to GitHub Pages
@@ -6,6 +7,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "capture-mod/**"
   workflow_dispatch:
 
 permissions:

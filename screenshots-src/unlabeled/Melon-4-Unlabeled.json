@@ -1,0 +1,49 @@
+{
+  "world": "Melon-7",
+  "room": "Melon",
+  "secrets": 7,
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 41.662,
+    "y": 70.62,
+    "z": 42.648,
+    "yaw": -124.501,
+    "pitch": 19.626,
+    "fov": 100
+  },
+  "block": [
+    41,
+    69,
+    42
+  ],
+  "blockInRoom": [
+    49,
+    3,
+    50
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      54,
+      99,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 4.136,
+    "variety": 4,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:53:55.132646800Z",
+  "difficultyGuess": "Hard"
+}

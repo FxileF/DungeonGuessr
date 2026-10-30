@@ -1,0 +1,49 @@
+{
+  "world": "Purple-Flags-5",
+  "room": "PurpleFlags",
+  "secrets": 5,
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 16.796,
+    "y": 53.62,
+    "z": -0.661,
+    "yaw": -155.435,
+    "pitch": 6.428,
+    "fov": 100
+  },
+  "block": [
+    16,
+    52,
+    -1
+  ],
+  "blockInRoom": [
+    24,
+    18,
+    7
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      34,
+      -8
+    ],
+    "max": [
+      54,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 6.117,
+    "variety": 17,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:55:17.754210400Z",
+  "difficultyGuess": "Medium"
+}

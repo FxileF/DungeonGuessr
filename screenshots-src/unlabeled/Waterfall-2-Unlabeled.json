@@ -1,0 +1,49 @@
+{
+  "world": "Waterfall-2",
+  "room": "Waterfall",
+  "secrets": 2,
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": -2.428,
+    "y": 74.62,
+    "z": 13.262,
+    "yaw": 76.43,
+    "pitch": 9.367,
+    "fov": 100
+  },
+  "block": [
+    -3,
+    73,
+    13
+  ],
+  "blockInRoom": [
+    5,
+    9,
+    21
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      64,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 4.039,
+    "variety": 10,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:58:34.251851600Z",
+  "difficultyGuess": "Hard"
+}

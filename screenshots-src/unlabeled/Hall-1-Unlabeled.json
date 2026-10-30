@@ -1,0 +1,48 @@
+{
+  "world": "Hall",
+  "room": "Hall",
+  "shot": 1,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 6.672,
+    "y": 70.62,
+    "z": 7.214,
+    "yaw": -75.981,
+    "pitch": -14.706,
+    "fov": 100
+  },
+  "block": [
+    6,
+    69,
+    7
+  ],
+  "blockInRoom": [
+    14,
+    3,
+    15
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 5.943,
+    "variety": 9,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:52:23.038467800Z",
+  "difficultyGuess": "Medium"
+}

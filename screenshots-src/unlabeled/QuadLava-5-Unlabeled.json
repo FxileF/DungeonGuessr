@@ -1,0 +1,49 @@
+{
+  "world": "Quad-Lava-2",
+  "room": "QuadLava",
+  "secrets": 2,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 15.617,
+    "y": 62.62,
+    "z": 2.448,
+    "yaw": -96.451,
+    "pitch": -8.158,
+    "fov": 100
+  },
+  "block": [
+    15,
+    61,
+    2
+  ],
+  "blockInRoom": [
+    23,
+    5,
+    10
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.115,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:55:25.313200500Z",
+  "difficultyGuess": "Hard"
+}

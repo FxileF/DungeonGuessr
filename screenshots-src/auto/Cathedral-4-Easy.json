@@ -1,0 +1,49 @@
+{
+  "world": "Cathedral-8",
+  "room": "Cathedral",
+  "secrets": 8,
+  "shot": 4,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 46.546,
+    "y": 69.62,
+    "z": -0.469,
+    "yaw": -27.483,
+    "pitch": 24.114,
+    "fov": 100
+  },
+  "block": [
+    46,
+    68,
+    -1
+  ],
+  "blockInRoom": [
+    54,
+    12,
+    7
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      54,
+      99,
+      55
+    ]
+  },
+  "view": {
+    "medianDistance": 6.502,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:49:44.875574Z",
+  "difficultyGuess": "Medium"
+}

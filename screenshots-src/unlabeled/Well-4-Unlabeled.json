@@ -1,0 +1,49 @@
+{
+  "world": "Well-7",
+  "room": "Well",
+  "secrets": 7,
+  "shot": 4,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 45.224,
+    "y": 88.62,
+    "z": 25.316,
+    "yaw": 43.278,
+    "pitch": 11.421,
+    "fov": 100
+  },
+  "block": [
+    45,
+    87,
+    25
+  ],
+  "blockInRoom": [
+    53,
+    34,
+    33
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      53,
+      -8
+    ],
+    "max": [
+      54,
+      119,
+      54
+    ]
+  },
+  "view": {
+    "medianDistance": 4.235,
+    "variety": 10,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:58:46.086857Z",
+  "difficultyGuess": "Hard"
+}

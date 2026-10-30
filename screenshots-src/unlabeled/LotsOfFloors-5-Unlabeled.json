@@ -1,0 +1,49 @@
+{
+  "world": "Lots-Of-Floors-3",
+  "room": "LotsOfFloors",
+  "secrets": 3,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 15.296,
+    "y": 77.62,
+    "z": 14.214,
+    "yaw": -2.311,
+    "pitch": 4.513,
+    "fov": 100
+  },
+  "block": [
+    15,
+    76,
+    14
+  ],
+  "blockInRoom": [
+    23,
+    18,
+    22
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      58,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 6.204,
+    "variety": 9,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:53:39.778720400Z",
+  "difficultyGuess": "Medium"
+}

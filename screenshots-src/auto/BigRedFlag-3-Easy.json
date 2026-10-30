@@ -1,0 +1,49 @@
+{
+  "world": "Big-Red-Flag-2",
+  "room": "BigRedFlag",
+  "secrets": 2,
+  "shot": 3,
+  "difficulty": "Easy",
+  "camera": {
+    "x": -1.793,
+    "y": 77.62,
+    "z": 10.634,
+    "yaw": -147.952,
+    "pitch": 9.586,
+    "fov": 100
+  },
+  "block": [
+    -2,
+    76,
+    10
+  ],
+  "blockInRoom": [
+    6,
+    10,
+    18
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      23,
+      113,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 8.896,
+    "variety": 13,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:48:45.179357600Z",
+  "difficultyGuess": "Medium"
+}

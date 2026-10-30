@@ -1,0 +1,49 @@
+{
+  "world": "Pressure-Plates-6",
+  "room": "PressurePlates",
+  "secrets": 6,
+  "shot": 2,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 13.329,
+    "y": 82.62,
+    "z": -5.431,
+    "yaw": 12.976,
+    "pitch": -9.472,
+    "fov": 100
+  },
+  "block": [
+    13,
+    81,
+    -6
+  ],
+  "blockInRoom": [
+    21,
+    28,
+    2
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      53,
+      -8
+    ],
+    "max": [
+      54,
+      123,
+      22
+    ]
+  },
+  "view": {
+    "medianDistance": 5.919,
+    "variety": 8,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:55:07.698748200Z",
+  "difficultyGuess": "Medium"
+}

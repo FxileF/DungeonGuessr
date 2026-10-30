@@ -1,0 +1,49 @@
+{
+  "world": "Grass-Ruin-3",
+  "room": "GrassRuin",
+  "secrets": 3,
+  "shot": 3,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": 3.261,
+    "y": 100.62,
+    "z": 21.268,
+    "yaw": 75.928,
+    "pitch": 3.719,
+    "fov": 100
+  },
+  "block": [
+    3,
+    99,
+    21
+  ],
+  "blockInRoom": [
+    11,
+    53,
+    29
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      46,
+      -8
+    ],
+    "max": [
+      22,
+      127,
+      54
+    ]
+  },
+  "view": {
+    "medianDistance": 8.879,
+    "variety": 19,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:52:13.668718100Z",
+  "difficultyGuess": "Medium"
+}

@@ -1,0 +1,49 @@
+{
+  "world": "Archway-3",
+  "room": "Archway",
+  "secrets": 3,
+  "shot": 3,
+  "difficulty": "Medium",
+  "camera": {
+    "x": 0.32,
+    "y": 86.62,
+    "z": 42.628,
+    "yaw": -85.713,
+    "pitch": 1.372,
+    "fov": 100
+  },
+  "block": [
+    0,
+    85,
+    42
+  ],
+  "blockInRoom": [
+    8,
+    29,
+    50
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      56,
+      -8
+    ],
+    "max": [
+      23,
+      99,
+      54
+    ]
+  },
+  "view": {
+    "medianDistance": 7.252,
+    "variety": 14,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:48:08.961508700Z",
+  "difficultyGuess": "Medium"
+}

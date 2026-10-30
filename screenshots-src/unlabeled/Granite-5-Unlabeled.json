@@ -1,0 +1,49 @@
+{
+  "world": "Granite-2",
+  "room": "Granite",
+  "secrets": 2,
+  "shot": 5,
+  "difficulty": "Unlabeled",
+  "camera": {
+    "x": -4.338,
+    "y": 71.62,
+    "z": -0.699,
+    "yaw": -115.781,
+    "pitch": 13.676,
+    "fov": 100
+  },
+  "block": [
+    -5,
+    70,
+    -1
+  ],
+  "blockInRoom": [
+    3,
+    12,
+    7
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      58,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 6.043,
+    "variety": 11,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:52:09.518719200Z",
+  "difficultyGuess": "Medium"
+}

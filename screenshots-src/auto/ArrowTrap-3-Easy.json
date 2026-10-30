@@ -1,0 +1,49 @@
+{
+  "world": "Arrow-Trap-1",
+  "room": "ArrowTrap",
+  "secrets": 1,
+  "shot": 3,
+  "difficulty": "Easy",
+  "camera": {
+    "x": 4.75,
+    "y": 70.62,
+    "z": 16.485,
+    "yaw": -91.697,
+    "pitch": 8.482,
+    "fov": 100
+  },
+  "block": [
+    4,
+    69,
+    16
+  ],
+  "blockInRoom": [
+    12,
+    3,
+    24
+  ],
+  "roomBounds": {
+    "min": [
+      -8,
+      66,
+      -8
+    ],
+    "max": [
+      22,
+      99,
+      23
+    ]
+  },
+  "view": {
+    "medianDistance": 5.987,
+    "variety": 12,
+    "escapeFraction": 0
+  },
+  "image": {
+    "width": 1920,
+    "height": 1009
+  },
+  "minecraft": "26.1.2",
+  "takenAt": "2026-10-30T11:48:14.104044400Z",
+  "difficultyGuess": "Medium"
+}
